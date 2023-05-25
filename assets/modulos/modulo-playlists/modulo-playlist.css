@@ -1,0 +1,14 @@
+.sombra{
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.50)!important;
+}
+.miniatura p{
+    font-size:0.8125rem;
+}
+
+.img-miniatura{
+    height:auto;
+     width: 40px;
+}
+.mb-footer{
+    margin-bottom: 5.5rem!important;
+}
