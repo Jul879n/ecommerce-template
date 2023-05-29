@@ -1,7 +1,7 @@
 <script>
     function incrustar_hoja_estilos_playlists() {
         var hoja_estilos_url =
-            '<?php echo get_site_url() . '/wp-content/themes/ecommerce-template/assets/modulos/modulo-playlists/modulo-playlist.css'; ?>';
+            '<?php echo get_site_url() . '/wp-content/themes/ecommerce-template/assets/modulos/modulo-productos/modulo-productos.css'; ?>';
         var hoja_estilos = document.createElement('link');
         hoja_estilos.rel = 'stylesheet';
         hoja_estilos.href = hoja_estilos_url;
@@ -20,7 +20,7 @@
         $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
         $post_per_page = 6; // -1 shows all posts
         $args = array(
-            'post_type' => 'playlists',
+            'post_type' => 'product',
             'orderby' => 'rand',
             'order' => 'asc',
             'paged' => $paged,
@@ -32,10 +32,7 @@
                 $wp_query->the_post(); ?>
                 <div class="col-6 col-sm-2 mt-2 p-1">
 		            <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-		                <a href="<?php the_permalink() ?>" class="card miniatura" style="position: relative;">
-				    <div class="antes-visible" style="position: absolute;">
-				        <span class="visibilidad"><i class="fa-solid fa-circle-play verde fs-1 me-4"></i></span>
-				    </div>
+		                <div class="card miniatura" style="position: relative;">
 		                    <div class="card-body">
 		                        <img class="sombra mb-3 rounded" src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)) ?>" alt="<?php echo get_the_title() ?>">
 		                        <span class="card-title">
@@ -44,8 +41,9 @@
 		                        <span class="card-text">
 		                            <?php echo the_content(); ?>
 		                        </span>
+                                <a class="btn btn-primary" href="<?php the_permalink() ?>">Ver más</a>
 		                    </div>
-		                </a>
+		                </div>
                     </div><!-- #post-<?php the_ID(); ?> -->
                 </div>
         <?php endwhile;

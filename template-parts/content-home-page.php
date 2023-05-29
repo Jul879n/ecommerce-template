@@ -11,11 +11,10 @@
 ?>
 
 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<div class="container-fluid">
+	<div class="container">
 		<div class="row">
-			hola
 			<h1><?php echo get_the_title();?></h1>
-			<?php echo  get_the_content()?>
+			<?php include get_template_directory() . '/assets/modulos/modulo-productos/loop-productos.php';?>
 		</div>
 	</div>
 </div><!-- #post-<?php the_ID(); ?> -->
