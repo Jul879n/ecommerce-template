@@ -32,7 +32,7 @@
                 $wp_query->the_post(); ?>
                 <div class="col-6 col-sm-2 mt-2 p-1">
 		            <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-		                <div class="card miniatura" style="position: relative;">
+		                <div class="card miniatura">
 		                    <div class="card-body">
 		                        <img class="sombra mb-3 rounded" src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)) ?>" alt="<?php echo get_the_title() ?>">
 		                        <span class="card-title">
