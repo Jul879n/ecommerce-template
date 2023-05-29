@@ -14,33 +14,33 @@
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses spotify_template_header_style()
+ * @uses ecommerce_template_header_style()
  */
-function spotify_template_custom_header_setup() {
+function ecommerce_template_custom_header_setup() {
 	add_theme_support(
 		'custom-header',
 		apply_filters(
-			'spotify_template_custom_header_args',
+			'ecommerce_template_custom_header_args',
 			array(
 				'default-image'      => '',
 				'default-text-color' => '000000',
 				'width'              => 1000,
 				'height'             => 250,
 				'flex-height'        => true,
-				'wp-head-callback'   => 'spotify_template_header_style',
+				'wp-head-callback'   => 'ecommerce_template_header_style',
 			)
 		)
 	);
 }
-add_action( 'after_setup_theme', 'spotify_template_custom_header_setup' );
+add_action( 'after_setup_theme', 'ecommerce_template_custom_header_setup' );
 
-if ( ! function_exists( 'spotify_template_header_style' ) ) :
+if ( ! function_exists( 'ecommerce_template_header_style' ) ) :
 	/**
 	 * Styles the header image and text displayed on the blog.
 	 *
-	 * @see spotify_template_custom_header_setup().
+	 * @see ecommerce_template_custom_header_setup().
 	 */
-	function spotify_template_header_style() {
+	function ecommerce_template_header_style() {
 		$header_text_color = get_header_textcolor();
 
 		/*

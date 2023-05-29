@@ -1,6 +1,6 @@
 <?php
 /**
- * Spotify template functions and definitions
+ * ecommerce template functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
@@ -19,11 +19,11 @@ if ( ! defined( '_S_VERSION' ) ) {
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function spotify_template_setup() {
+function ecommerce_template_setup() {
 	/*
 		* Make theme available for translation.
 		* Translations can be filed in the /languages/ directory.
-		* If you're building a theme based on Spotify template, use a find and replace
+		* If you're building a theme based on ecommerce template, use a find and replace
 		* to change 'ecommerce-template' to the name of your theme in all the template files.
 		*/
 	load_theme_textdomain( 'ecommerce-template', get_template_directory() . '/languages' );
@@ -74,7 +74,7 @@ function spotify_template_setup() {
 	add_theme_support(
 		'custom-background',
 		apply_filters(
-			'spotify_template_custom_background_args',
+			'ecommerce_template_custom_background_args',
 			array(
 				'default-color' => 'ffffff',
 				'default-image' => '',
@@ -100,7 +100,7 @@ function spotify_template_setup() {
 		)
 	);
 }
-add_action( 'after_setup_theme', 'spotify_template_setup' );
+add_action( 'after_setup_theme', 'ecommerce_template_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -109,17 +109,17 @@ add_action( 'after_setup_theme', 'spotify_template_setup' );
  *
  * @global int $content_width
  */
-function spotify_template_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'spotify_template_content_width', 640 );
+function ecommerce_template_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'ecommerce_template_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'spotify_template_content_width', 0 );
+add_action( 'after_setup_theme', 'ecommerce_template_content_width', 0 );
 
 /**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function spotify_template_widgets_init() {
+function ecommerce_template_widgets_init() {
 	register_sidebar(
 		array(
 			'name'          => esc_html__( 'Sidebar', 'ecommerce-template' ),
@@ -132,12 +132,12 @@ function spotify_template_widgets_init() {
 		)
 	);
 }
-add_action( 'widgets_init', 'spotify_template_widgets_init' );
+add_action( 'widgets_init', 'ecommerce_template_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
  */
-function spotify_template_scripts() {
+function ecommerce_template_scripts() {
 	wp_enqueue_style( 'ecommerce-template-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'ecommerce-template-style', 'rtl', 'replace' );
 
@@ -147,7 +147,7 @@ function spotify_template_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'spotify_template_scripts' );
+add_action( 'wp_enqueue_scripts', 'ecommerce_template_scripts' );
 
 /**
  * Implement the Custom Header feature.

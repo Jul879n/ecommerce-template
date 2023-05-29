@@ -2,7 +2,7 @@
 
 //widget assets
 
-function spotify_widget() {
+function ecommerce_widget() {
     register_sidebar( array(
         'name'          => 'nav',
         'id'            => 'nav0',
@@ -45,4 +45,4 @@ function spotify_widget() {
     ) );
 }
 
-add_action( 'widgets_init', 'spotify_widget' );
+add_action( 'widgets_init', 'ecommerce_widget' );

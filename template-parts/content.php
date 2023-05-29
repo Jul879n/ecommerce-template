@@ -22,14 +22,14 @@
 			?>
 			<div class="entry-meta">
 				<?php
-				spotify_template_posted_on();
-				spotify_template_posted_by();
+				ecommerce_template_posted_on();
+				ecommerce_template_posted_by();
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php spotify_template_post_thumbnail(); ?>
+	<?php ecommerce_template_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php
@@ -58,6 +58,6 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php spotify_template_entry_footer(); ?>
+		<?php ecommerce_template_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
