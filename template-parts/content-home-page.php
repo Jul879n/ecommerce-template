@@ -13,6 +13,7 @@
 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="container">
 		<div class="row">
+		<?php include get_template_directory() . '/template-parts/nav.php';?>
 			<?php include get_template_directory() . '/assets/modulos/modulo-productos/loop-productos.php';?>
 		</div>
 	</div>
