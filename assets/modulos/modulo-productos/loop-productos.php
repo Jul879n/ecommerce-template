@@ -41,7 +41,7 @@
 		                        <span class="card-text">
 		                            <?php echo the_content(); ?>
 		                        </span>
-                                <a class="btn btn-primary" href="<?php the_permalink() ?>">Ver más</a>
+                                <a href="?add-to-cart=<?php echo get_the_ID(); ?>" rel="nofollow" data-product_id="<?php echo get_the_ID(); ?>" data-product_sku="" class="btn btn-primary">Añadir al carrito</a>
 		                    </div>
 		                </div>
                     </div><!-- #post-<?php the_ID(); ?> -->
