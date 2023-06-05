@@ -49,7 +49,7 @@ add_action('woocommerce_after_add_to_cart_button', 'mostrar_cuotas_single', 25);
 //}
 //add_action( 'woocommerce_after_shop_loop_item', 'boton_de_agregar', 30 );
 function caracteristicas(){
-    echo "<div class='mt-2 bg-primary'>";
+    echo "<div class='mt-5 bg-primary'>";
     $i = 1;
     while($i <= 10){
         echo "<span>" . esc_html( get_field('tienes_que_saber_' . $i) ) . "</span><br>";
