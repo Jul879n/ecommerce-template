@@ -39,7 +39,7 @@ function mostrar_cuotas_single() {
     $precio_cuota_formateado = number_format($precio_cuota, 0, ',', '.');
     // Mostrar el contenido del campo personalizado si existe
     if ($cuotas) {
-        echo '<div class="cuotas">' . esc_html($cuotas) . 'x $' . esc_html($precio_cuota_formateado) . ' sin interés</div>';
+        echo '<div class="cuotas mt-5">' . esc_html($cuotas) . 'x $' . esc_html($precio_cuota_formateado) . ' sin interés</div>';
     }
 }
 add_action('woocommerce_after_add_to_cart_button', 'mostrar_cuotas_single', 25);
@@ -49,7 +49,7 @@ add_action('woocommerce_after_add_to_cart_button', 'mostrar_cuotas_single', 25);
 //}
 //add_action( 'woocommerce_after_shop_loop_item', 'boton_de_agregar', 30 );
 function caracteristicas(){
-    echo "<div class='mt-5 bg-primary'>";
+    echo '<div class="mt-5 bg-primary">';
     $i = 1;
     while($i <= 10){
         echo "<span>" . esc_html( get_field('tienes_que_saber_' . $i) ) . "</span><br>";
