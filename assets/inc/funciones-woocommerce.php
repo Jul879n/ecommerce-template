@@ -55,4 +55,4 @@ function caracteristicas(){
         $i++;
     }
 }
-add_action( 'woocommerce_after_single_product', 'caracteristicas', 30 );
+add_action( 'woocommerce_single_product_summary', 'caracteristicas', 40 );
