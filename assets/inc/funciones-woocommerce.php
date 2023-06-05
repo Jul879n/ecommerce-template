@@ -51,8 +51,8 @@ add_action('woocommerce_after_add_to_cart_button', 'mostrar_cuotas_single', 25);
 function caracteristicas(){
     $i = 1;
     while($i <= 10){
-        echo "<h2>" . esc_html( get_field('tienes_que_saber_' . $i) ) . "</h2>";
+        echo "<span>" . esc_html( get_field('tienes_que_saber_' . $i) ) . "</span>";
         $i++;
     }
 }
-add_action( 'woocommerce_after_shop_loop_item', 'caracteristicas', 30 );
+add_action( 'woocommerce_after_single_product', 'caracteristicas', 30 );
