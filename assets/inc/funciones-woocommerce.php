@@ -62,4 +62,4 @@ add_action( 'woocommerce_after_add_to_cart_button', 'caracteristicas', 30 );
 function nav(){
     include get_template_directory() . '/template-parts/nav.php';
 }
-add_action( 'woocommerce_before_single_product', 'nav', 10 );
+add_action( 'woocommerce_before_single_product', 'nav', 5 );
