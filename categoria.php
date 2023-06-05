@@ -1,6 +1,6 @@
 <?php
 /**
- * Template name: Ecommerce
+ * Template name: Categoria
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages

@@ -9,3 +9,5 @@ include get_template_directory().'/assets/inc/js-functions.php';
 include get_template_directory().'/assets/inc/modulos-functions.php';
 //llamado a Widgets
 include get_template_directory().'/assets/inc/widgets-functions.php';
+//llamado a Woocommerce
+include get_template_directory().'/assets/inc/funciones-woocommerce.php';

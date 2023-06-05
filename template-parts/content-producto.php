@@ -16,4 +16,5 @@
 			<?php include get_template_directory() . '/assets/modulos/modulo-productos/loop-productos.php';?>
 		</div>
 	</div>
+	<?php echo get_the_title()?>
 </div><!-- #post-<?php the_ID(); ?> -->

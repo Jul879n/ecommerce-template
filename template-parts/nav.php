@@ -1,36 +1,40 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+<div class="container-fluid bg-principal">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="row">
+        <div class="col-12">
+          <div class="d-flex justify-content-between">
+            <?php the_custom_logo(); ?>
+            <form class="d-flex col-sm-5" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            </form>
+            <div class="d-flex justify-content-start w-20">
+              <?php
+              $image = get_field('promocion');
+              if (!empty($image)) : ?>
+                <img class="promocion-nav" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+              <?php endif; ?>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-12 col-sm-12">
+          <div class="d-flex justify-content-between">
+            <?php if (is_active_sidebar('nav1')) :
+              dynamic_sidebar('nav1');
+            endif; ?>
+            <?php if (is_active_sidebar('nav2')) :
+              dynamic_sidebar('nav2');
+            endif; ?>
+            <?php if (is_active_sidebar('nav3')) :
+              dynamic_sidebar('nav3');
+            endif; ?>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+</div>

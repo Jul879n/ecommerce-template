@@ -1,5 +1,5 @@
 <script>
-    function incrustar_hoja_estilos_playlists() {
+    function incrustar_hoja_estilos_ecommerce() {
         var hoja_estilos_url =
             '<?php echo get_site_url() . '/wp-content/themes/ecommerce-template/assets/modulos/modulo-productos/modulo-productos.css'; ?>';
         var hoja_estilos = document.createElement('link');
@@ -7,49 +7,48 @@
         hoja_estilos.href = hoja_estilos_url;
         document.head.appendChild(hoja_estilos);
     }
-    incrustar_hoja_estilos_playlists();
+    incrustar_hoja_estilos_ecommerce();
 </script>
-
-<!-- contenido playlists -->
-<div class="seccion-enfoque container">
-    <div class="container">
-    <div class="row">
-        <h2 class="text-white">Enfoque</h2>
-        <?php $active = true;
-        $temp = $wp_query;
-        $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-        $post_per_page = 6; // -1 shows all posts
-        $args = array(
-            'post_type' => 'product',
-            'orderby' => 'rand',
-            'order' => 'asc',
-            'paged' => $paged,
-            'posts_per_page' => $post_per_page
-        );
-        $wp_query = new WP_Query($args);
-        if (have_posts()) :
-            while ($wp_query->have_posts()) :
-                $wp_query->the_post(); ?>
-                <div class="col-6 col-sm-2 mt-2 p-1">
+<?php
+$args = array(
+    'posts_per_page' => 8,
+    // Número máximo de publicaciones a mostrar
+    'post_type' => 'product',
+    // Tipo de publicación a consultar
+    'post_status' => 'publish',
+    // Estado de la publicación
+    'tax_query' => array(
+        array(
+            'taxonomy' => 'product_visibility',
+            // Taxonomía a filtrar
+            'field' => 'name',
+            // Campo de la taxonomía a comparar
+            'terms' => 'featured',
+            // Valor de la taxonomía a buscar
+            'operator' => 'IN',
+            // Operador para comparar términos (puede ser IN, NOT IN, etc.)
+        ),
+    ),
+);
+$featured_product = new WP_Query($args); // Realizar la consulta de publicaciones
+if ($featured_product->have_posts()) { // Comprobar si hay publicaciones encontradas
+    while ($featured_product->have_posts()):
+        $featured_product->the_post();
+        // Inicio del bucle para mostrar cada publicación encontrada
+        ?>
+        <div class="col-6 col-sm-2 mt-2 p-1">
 		            <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		                <div class="card miniatura">
 		                    <div class="card-body">
-		                        <img class="sombra mb-3 rounded" src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)) ?>" alt="<?php echo get_the_title() ?>">
-		                        <span class="card-title">
-		                            <?php echo get_the_title() ?>
-		                        </span>
-		                        <span class="card-text">
-		                            <?php echo the_content(); ?>
-		                        </span>
-                                <a href="?add-to-cart=<?php echo get_the_ID(); ?>" rel="nofollow" data-product_id="<?php echo get_the_ID(); ?>" data-product_sku="" class="btn btn-primary">Añadir al carrito</a>
+                            <?php wc_get_template_part('content', 'product'); ?>
 		                    </div>
 		                </div>
                     </div><!-- #post-<?php the_ID(); ?> -->
                 </div>
-        <?php endwhile;
-        endif;
-        wp_reset_query();
-        $wp_query = $temp ?>
-    </div>
-</div>
-</div>
+        <?php
+    endwhile; // Fin del bucle para mostrar cada publicación
+} else {
+    echo __('Lo sentimos no hay productos'); // Mostrar mensaje si no se encuentran productos
+}
+wp_reset_postdata(); // Restablecer los datos de la consulta original
+?>
