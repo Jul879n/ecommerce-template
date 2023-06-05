@@ -58,3 +58,8 @@ function caracteristicas(){
     echo "</div>";
 }
 add_action( 'woocommerce_after_add_to_cart_button', 'caracteristicas', 30 );
+
+function nav(){
+    include get_template_directory() . '/template-parts/nav.php';
+}
+add_action( 'woocommerce_before_main_content', 'nav', 20, 0 );
