@@ -44,7 +44,15 @@ function mostrar_cuotas_single() {
 }
 add_action('woocommerce_after_add_to_cart_button', 'mostrar_cuotas_single', 25);
 
-function boton_de_agregar(){
-    echo '<a href="?add-to-cart=' . get_the_ID() . '" rel="nofollow" data-product_id="' . get_the_ID() . '" data-product_sku="" class="btn btn-primary">Añadir al carrito</a>';
+//function boton_de_agregar(){
+    //echo '<a href="?add-to-cart=' . get_the_ID() . '" rel="nofollow" data-product_id="' . get_the_ID() . '" data-product_sku="" class="btn btn-primary">Añadir al carrito</a>';
+//}
+//add_action( 'woocommerce_after_shop_loop_item', 'boton_de_agregar', 30 );
+function caracteristicas(){
+    $i = 1;
+    while($i <= 10){
+        echo "<h2>" . esc_html( get_field('tienes_que_saber_' . $i) ) . "</h2>";
+        $i++;
+    }
 }
-add_action( 'woocommerce_after_shop_loop_item', 'boton_de_agregar', 30 );
+add_action( 'woocommerce_after_shop_loop_item', 'caracteristicas', 30 );
