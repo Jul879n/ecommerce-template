@@ -51,7 +51,7 @@ add_action('woocommerce_after_add_to_cart_button', 'mostrar_cuotas_single', 25);
 function caracteristicas(){
     $i = 1;
     while($i <= 10){
-        echo "<span>" . esc_html( get_field('tienes_que_saber_' . $i) ) . "</span>";
+        echo "<span>" . esc_html( get_field('tienes_que_saber_' . $i) ) . "</span><br>";
         $i++;
     }
 }
