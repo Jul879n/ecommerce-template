@@ -89,8 +89,8 @@ function mostrar_porcentaje() {
 add_action( 'woocommerce_single_product_summary', 'mostrar_porcentaje', 10 );
 
 function columnas_cart(){
-    echo '<div class="card">';
-    echo '<div class="card-body">';
+    echo '<div class="card placeholder-glow">';
+    echo '<div class="card-body placeholder">';
 }
 add_action( 'woocommerce_cart_collaterals', 'columnas_cart', 5 );
 
