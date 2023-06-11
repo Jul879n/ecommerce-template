@@ -1,5 +1,6 @@
 <?php
-function mostrar_flash_ofertas() {
+function mostrar_flash_ofertas()
+{
     global $product;
     // Obtener el valor del campo personalizado "flash_ofertas" utilizando ACF
     $flash_ofertas = get_field('flash_ofertas', $product->get_id());
@@ -10,7 +11,8 @@ function mostrar_flash_ofertas() {
 }
 add_action('woocommerce_after_shop_loop_item', 'mostrar_flash_ofertas', 5);
 
-function mostrar_cuotas() {
+function mostrar_cuotas()
+{
     global $product;
     // Obtener el valor del campo personalizado "cuotas" utilizando ACF
     $cuotas = get_field('cuotas', $product->get_id());
@@ -27,7 +29,8 @@ function mostrar_cuotas() {
 }
 add_action('woocommerce_after_shop_loop_item_title', 'mostrar_cuotas', 15);
 
-function mostrar_cuotas_single() {
+function mostrar_cuotas_single()
+{
     global $product;
     // Obtener el valor del campo personalizado "cuotas" utilizando ACF
     $cuotas = get_field('cuotas', $product->get_id());
@@ -39,27 +42,48 @@ function mostrar_cuotas_single() {
     $precio_cuota_formateado = number_format($precio_cuota, 0, ',', '.');
     // Mostrar el contenido del campo personalizado si existe
     if ($cuotas) {
-        echo '<div class="cuotas mt-5">' . esc_html($cuotas) . 'x $' . esc_html($precio_cuota_formateado) . ' sin interés</div>';
+        echo '<div class="cuotas mt-5">en <span class="verde">' . esc_html($cuotas) . 'x $' . esc_html($precio_cuota_formateado) . ' sin interés</span></div>';
     }
 }
 add_action('woocommerce_after_add_to_cart_button', 'mostrar_cuotas_single', 25);
 
-//function boton_de_agregar(){
-    //echo '<a href="?add-to-cart=' . get_the_ID() . '" rel="nofollow" data-product_id="' . get_the_ID() . '" data-product_sku="" class="btn btn-primary">Añadir al carrito</a>';
-//}
-//add_action( 'woocommerce_after_shop_loop_item', 'boton_de_agregar', 30 );
 function caracteristicas(){
-    echo '<div class="mt-5 bg-primary">';
-    $i = 1;
-    while($i <= 10){
-        echo "<span>" . esc_html( get_field('tienes_que_saber_' . $i) ) . "</span><br>";
-        $i++;
+    $existe = false;
+    for ($i = 1; $i <= 10; $i++) {
+        if (get_field('tienes_que_saber_' . $i)) {
+            $existe = true;
+            break;
+        }
     }
-    echo "</div>";
+    if ($existe) {
+        echo '<div class="mt-5">';
+        for ($i = 1; $i <= 10; $i++) {
+            echo "<span>" . esc_html(get_field('tienes_que_saber_' . $i)) . "</span><br>";
+        }
+        echo "</div>";
+    }
 }
-add_action( 'woocommerce_after_add_to_cart_button', 'caracteristicas', 30 );
+add_action('woocommerce_after_add_to_cart_button', 'caracteristicas', 30);
 
 function nav(){
     include get_template_directory() . '/template-parts/nav.php';
 }
-add_action( 'woocommerce_before_main_content', 'nav', 20 );
+add_action('woocommerce_before_main_content', 'nav', 20);
+
+function titulo(){
+    echo '<h1>' . get_the_title() . '</h1>';
+}
+add_action('woocommerce_single_product_summary', 'titulo', 5);
+
+function mostrar_porcentaje() {
+    global $product;
+    // Obtener el precio del producto
+    $precio_original = $product->get_regular_price();
+    $precio_oferta = $product->get_sale_price();
+    if ( $precio_oferta ) {
+        $diferencia = abs( $precio_original - $precio_oferta );
+        $porcentaje = round( ( $diferencia / $precio_original ) * 100 );
+        echo '<div class="porcentaje">' . esc_html( $porcentaje ) . '% OFF</div>';
+    }
+}
+add_action( 'woocommerce_single_product_summary', 'mostrar_porcentaje', 10 );

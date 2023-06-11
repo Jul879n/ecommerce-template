@@ -11,7 +11,7 @@
 ?>
 
 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php include get_template_directory() . '/template-parts/nav.php'; ?>
+	
 	<div class="container">
 		<div class="row">
 			<?php include get_template_directory() . '/assets/modulos/modulo-productos/loop-productos.php'; ?>
