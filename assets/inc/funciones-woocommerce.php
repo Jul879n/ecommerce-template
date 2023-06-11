@@ -87,3 +87,15 @@ function mostrar_porcentaje() {
     }
 }
 add_action( 'woocommerce_single_product_summary', 'mostrar_porcentaje', 10 );
+
+function columnas_cart(){
+    echo '<div class="card">';
+    echo '<div class="card-body">';
+}
+add_action( 'woocommerce_cart_collaterals', 'columnas_cart', 5 );
+
+function columnas_cart_medio(){
+    echo '</div>';
+    echo '</div>';
+}
+add_action( 'woocommerce_cart_collaterals', 'columnas_cart_medio', 10 );

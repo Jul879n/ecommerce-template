@@ -1,6 +1,12 @@
 jQuery(document).ready(function($){
-  $(".site-main").addClass("container card shadow mt-5 mb-5 p-0");
   $(".entry-summary").addClass("card p-3");
-  $(".product, .comments-area").addClass("card-body");
-  $(".entry-header .entry-title").remove();
+  $(".volver").click(function(){
+    window.history.back();
+  });
+  if ($('.woocommerce').has('.woocommerce-cart-form').length) {
+    $('.woocommerce').addClass('row mt-5');
+  }
+  $(".woocommerce-cart-form").addClass("col-12 col-sm-8 me-4")
+  $(".cart-collaterals").addClass("col-12 col-sm-4")
+  $(".cart_totals").addClass("w-100")
 });
