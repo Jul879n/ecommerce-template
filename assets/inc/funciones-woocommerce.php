@@ -24,7 +24,7 @@ function mostrar_cuotas()
     $precio_cuota_formateado = number_format($precio_cuota, 0, ',', '.');
     // Mostrar el contenido del campo personalizado si existe
     if ($cuotas) {
-        echo '<div class="cuotas">' . esc_html($cuotas) . ' cuotas de $' . esc_html($precio_cuota_formateado) . '</div>';
+        echo '<div class="cuotas">en <span class="verde">' . esc_html($cuotas) . 'x $' . esc_html($precio_cuota_formateado) . ' sin interés</span></div>';
     }
 }
 add_action('woocommerce_after_shop_loop_item_title', 'mostrar_cuotas', 15);
