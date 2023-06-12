@@ -8,9 +8,7 @@
         <div class="col-12">
           <div class="d-flex justify-content-between">
             <?php the_custom_logo(); ?>
-            <?php if (is_active_sidebar('buscar')) :
-              dynamic_sidebar('buscar');
-            endif; ?>
+            <?php aws_get_search_form( true ); ?>
             <div class="d-flex justify-content-start w-20">
               <?php
               $image = get_field('promocion');

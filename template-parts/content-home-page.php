@@ -89,12 +89,28 @@
 	</div>
 	<!--banner superior-->
 
-	<div class="container">
+	<div class="container mt-5">
 		<div class="row">
 			<!--medio de pago-->
-					<div class="card mt-5">
+					<div class="card">
 						<div class="card-body">
-						<h2><?php echo esc_html( get_field('cuadro_1') ); ?></h2>
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-3">
+									<span><?php echo esc_html( get_field('cuadro_1') ); ?></span>
+									</div>
+									<div class="col-3">
+									<span><?php echo esc_html( get_field('cuadro_2') ); ?></span>
+									</div>
+									<div class="col-3">
+									<span><?php echo esc_html( get_field('cuadro_3') ); ?></span>
+									</div>
+									<div class="col-3">
+									<span><?php echo esc_html( get_field('cuadro_4') ); ?></span>
+									</div>
+								</div>
+							</div>
+						
 						</div>
 					</div>
 			<!--medio de pago-->
