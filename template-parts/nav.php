@@ -8,7 +8,10 @@
         <div class="col-12">
           <div class="d-flex justify-content-between">
             <?php the_custom_logo(); ?>
+            <div class="col-6">
             <?php aws_get_search_form( true ); ?>
+            </div>
+            
             <div class="d-flex justify-content-start w-20">
               <?php
               $image = get_field('promocion');
