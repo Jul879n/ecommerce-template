@@ -126,7 +126,7 @@
 			<div class="card p-0">
 				<div class="card-header d-flex justify-content-between">
 						<h2><?php echo esc_html(get_field('titulo')); ?></h2>
-						<div class="border-start border-primary">
+						<div class="border-start border-primary ps-3">
 						<span>$<?php echo esc_html(get_field('precio_original')); ?></span><br>
 						<span>$<?php echo esc_html(get_field('precio_oferta')); ?> / mes</span>
 						</div>
