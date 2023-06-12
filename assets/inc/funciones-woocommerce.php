@@ -89,6 +89,9 @@ function mostrar_porcentaje() {
 add_action( 'woocommerce_single_product_summary', 'mostrar_porcentaje', 10 );
 
 function columnas_cart(){
+    echo '<div id="loading-screen">
+    <div class="spinner-border text-warning" role="status"><span class="visually-hidden">Loading...</span></div>
+</div>';
     echo '<div class="card">';
     echo '<div class="card-body">';
 }
