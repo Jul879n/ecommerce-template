@@ -88,7 +88,6 @@
 		</button>
 	</div>
 	<!--banner superior-->
-
 	<div class="container mt-5">
 		<div class="row">
 			<!--medio de pago-->
@@ -123,23 +122,18 @@
 			</div>
 			<!--medio de pago-->
 			<?php include get_template_directory() . '/assets/modulos/modulo-productos/loop-productos.php'; ?>
-
 			<!--Suscríbete-->
 			<div class="card">
 				<div class="card-header">
-					<div class="col-8">
 						<h2>
 							<?php echo esc_html(get_field('titulo')); ?>
 						</h2>
-					</div>
-					<div class="col-2">
 						<span>
 							<?php echo esc_html(get_field('precio_original')); ?>
 						</span><br>
 						<span>
 							<?php echo esc_html(get_field('precio_oferta')); ?>
 						</span>
-					</div>
 				</div>
 				<div class="card-body">
 					<p>
