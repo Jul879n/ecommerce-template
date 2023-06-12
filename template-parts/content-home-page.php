@@ -24,10 +24,44 @@
 				<?php endif; ?>
 			</div>
 			<div class="carousel-item">
-				<img src="..." class="d-block w-100" alt="...">
+				<?php
+				$image = get_field('banner_2');
+				if (!empty($image)): ?>
+					<img class="banner" src="<?php echo esc_url($image['url']); ?>"
+						alt="<?php echo esc_attr($image['alt']); ?>" />
+				<?php endif; ?>
 			</div>
 			<div class="carousel-item">
-				<img src="..." class="d-block w-100" alt="...">
+				<?php
+				$image = get_field('banner_3');
+				if (!empty($image)): ?>
+					<img class="banner" src="<?php echo esc_url($image['url']); ?>"
+						alt="<?php echo esc_attr($image['alt']); ?>" />
+				<?php endif; ?>
+			</div>
+			<div class="carousel-item">
+				<?php
+				$image = get_field('banner_4');
+				if (!empty($image)): ?>
+					<img class="banner" src="<?php echo esc_url($image['url']); ?>"
+						alt="<?php echo esc_attr($image['alt']); ?>" />
+				<?php endif; ?>
+			</div>
+			<div class="carousel-item">
+				<?php
+				$image = get_field('banner_5');
+				if (!empty($image)): ?>
+					<img class="banner" src="<?php echo esc_url($image['url']); ?>"
+						alt="<?php echo esc_attr($image['alt']); ?>" />
+				<?php endif; ?>
+			</div>
+			<div class="carousel-item">
+				<?php
+				$image = get_field('banner_6');
+				if (!empty($image)): ?>
+					<img class="banner" src="<?php echo esc_url($image['url']); ?>"
+						alt="<?php echo esc_attr($image['alt']); ?>" />
+				<?php endif; ?>
 			</div>
 		</div>
 		<button class="carousel-control-prev" type="button" data-bs-target="#bannerSuperior" data-bs-slide="prev">
