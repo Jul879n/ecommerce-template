@@ -12,6 +12,9 @@ get_header();
 ?>
 
 <main id="primary" class="site-main container">
+<div id="loading-screen">
+	<div class="spinner-border text-warning" role="status"><span class="visually-hidden">Loading...</span></div>
+	</div>
 	<div class="card shadow mt-5 mb-5">
 	<div class="card-header">
 		<button class="volver btn">volver</button>

@@ -26,9 +26,6 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'ecommerce-template' ); ?></a>
 
 	<header id="masthead" class="site-header">
-	<div id="loading-screen">
-	<div class="spinner-border text-warning" role="status"><span class="visually-hidden">Loading...</span></div>
-	</div>
 	<?php include get_template_directory() . '/template-parts/nav.php'; ?>
 		<div class="site-branding">
 			<?php
