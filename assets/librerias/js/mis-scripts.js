@@ -11,5 +11,5 @@ jQuery(document).ready(function ($) {
   $(".cart_totals").addClass("w-100");
   setTimeout(function() {
     $("#loading-screen").remove();
- }, 200);
+  }, 500);
 });
