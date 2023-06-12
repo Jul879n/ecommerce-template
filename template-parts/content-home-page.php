@@ -96,7 +96,7 @@
 					<div class="container-fluid">
 						<div class="row">
 							<div class="col-3">
-								<span>
+								<span class="border-start border-primary">
 									<?php echo esc_html(get_field('cuadro_1')); ?>
 								</span>
 							</div>
