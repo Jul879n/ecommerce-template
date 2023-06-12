@@ -124,12 +124,13 @@
 			<?php include get_template_directory() . '/assets/modulos/modulo-productos/loop-productos.php'; ?>
 			<!--Suscríbete-->
 			<div class="card p-0">
-				<div class="card-header">
-						<h2>
-							<?php echo esc_html(get_field('titulo')); ?>
-						</h2>
+				<div class="card-header d-flex justify-content-between">
+						<h2><?php echo esc_html(get_field('titulo')); ?></h2>
+						<div>
 						<span>$<?php echo esc_html(get_field('precio_original')); ?></span><br>
 						<span>$<?php echo esc_html(get_field('precio_oferta')); ?> / mes</span>
+						</div>
+						
 				</div>
 				<div class="card-body">
 					<p>
