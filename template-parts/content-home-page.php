@@ -157,6 +157,7 @@
 								<span><?php echo esc_html(get_field('beneficio_2_texto')); ?></span>
 							</div>
 							<div class="col-4">
+								<div class="d-flex">
 								<?php
 								$image = get_field('beneficio_3_imagen');
 								if (!empty($image)): ?>
@@ -164,6 +165,8 @@
 										alt="<?php echo esc_attr($image['alt']); ?>" />
 								<?php endif; ?>
 								<span><?php echo esc_html(get_field('beneficio_3_texto')); ?></span>
+								</div>
+								
 							</div>
 						</div>
 					</div>
