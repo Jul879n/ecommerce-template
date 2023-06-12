@@ -92,7 +92,7 @@
 	<div class="container">
 		<div class="row">
 			<!--medio de pago-->
-					<div class="card">
+					<div class="card mt-5">
 						<div class="card-body">
 						<h2><?php echo esc_html( get_field('cuadro_1') ); ?></h2>
 						</div>
