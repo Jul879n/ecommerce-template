@@ -92,29 +92,93 @@
 	<div class="container mt-5">
 		<div class="row">
 			<!--medio de pago-->
-					<div class="card">
-						<div class="card-body">
-							<div class="container-fluid">
-								<div class="row">
-									<div class="col-3">
-									<span><?php echo esc_html( get_field('cuadro_1') ); ?></span>
-									</div>
-									<div class="col-3">
-									<span><?php echo esc_html( get_field('cuadro_2') ); ?></span>
-									</div>
-									<div class="col-3">
-									<span><?php echo esc_html( get_field('cuadro_3') ); ?></span>
-									</div>
-									<div class="col-3">
-									<span><?php echo esc_html( get_field('cuadro_4') ); ?></span>
-									</div>
-								</div>
+			<div class="card">
+				<div class="card-body">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-3">
+								<span>
+									<?php echo esc_html(get_field('cuadro_1')); ?>
+								</span>
 							</div>
-						
+							<div class="col-3">
+								<span>
+									<?php echo esc_html(get_field('cuadro_2')); ?>
+								</span>
+							</div>
+							<div class="col-3">
+								<span>
+									<?php echo esc_html(get_field('cuadro_3')); ?>
+								</span>
+							</div>
+							<div class="col-3">
+								<span>
+									<?php echo esc_html(get_field('cuadro_4')); ?>
+								</span>
+							</div>
 						</div>
 					</div>
+
+				</div>
+			</div>
 			<!--medio de pago-->
 			<?php include get_template_directory() . '/assets/modulos/modulo-productos/loop-productos.php'; ?>
+
+			<!--Suscríbete-->
+			<div class="card">
+				<div class="card-header">
+					<div class="col-8">
+						<h2>
+							<?php echo esc_html(get_field('titulo')); ?>
+						</h2>
+					</div>
+					<div class="col-2">
+						<span>
+							<?php echo esc_html(get_field('precio_original')); ?>
+						</span><br>
+						<span>
+							<?php echo esc_html(get_field('precio_oferta')); ?>
+						</span>
+					</div>
+				</div>
+				<div class="card-body">
+					<p>
+						<?php echo esc_html(get_field('informacion')); ?>
+					</p>
+					<div class="container">
+						<div class="row">
+							<div class="col-4">
+								<?php
+								$image = get_field('beneficio_1_imagen');
+								if (!empty($image)): ?>
+									<img class="banner" src="<?php echo esc_url($image['url']); ?>"
+										alt="<?php echo esc_attr($image['alt']); ?>" />
+								<?php endif; ?>
+								<span><?php echo esc_html(get_field('beneficio_1_texto')); ?></span>
+							</div>
+							<div class="col-4">
+								<?php
+								$image = get_field('beneficio_2_imagen');
+								if (!empty($image)): ?>
+									<img class="banner" src="<?php echo esc_url($image['url']); ?>"
+										alt="<?php echo esc_attr($image['alt']); ?>" />
+								<?php endif; ?>
+								<span><?php echo esc_html(get_field('beneficio_2_texto')); ?></span>
+							</div>
+							<div class="col-4">
+								<?php
+								$image = get_field('beneficio_3_imagen');
+								if (!empty($image)): ?>
+									<img class="banner" src="<?php echo esc_url($image['url']); ?>"
+										alt="<?php echo esc_attr($image['alt']); ?>" />
+								<?php endif; ?>
+								<span><?php echo esc_html(get_field('beneficio_3_texto')); ?></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--Suscríbete-->
 		</div>
 	</div>
 </div><!-- #post-<?php the_ID(); ?> -->
