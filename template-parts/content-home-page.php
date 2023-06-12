@@ -123,7 +123,7 @@
 			<!--medio de pago-->
 			<?php include get_template_directory() . '/assets/modulos/modulo-productos/loop-productos.php'; ?>
 			<!--Suscríbete-->
-			<div class="card">
+			<div class="card p-0">
 				<div class="card-header">
 						<h2>
 							<?php echo esc_html(get_field('titulo')); ?>
