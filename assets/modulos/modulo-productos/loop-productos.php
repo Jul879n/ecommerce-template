@@ -36,7 +36,7 @@ if ($featured_product->have_posts()) { // Comprobar si hay publicaciones encontr
         $featured_product->the_post();
         // Inicio del bucle para mostrar cada publicación encontrada
         ?>
-        <div class="col-6 col-sm-2 mt-2 p-1">
+        <div class="col-6 col-sm-3 mt-2 p-1">
 		            <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		                <div class="card miniatura">
 		                    <div class="card-body">
