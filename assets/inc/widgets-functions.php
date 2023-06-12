@@ -41,6 +41,54 @@ function ecommerce_widget() {
         'before_title' => '<h3 class="titulo-menu-nav">', //añadimos contenedores por titulo
         'after_title' => '</h3>' //cerramos los contenedores de titulo
     ) );
+    register_sidebar( array(
+        'name'          => 'footer 1',
+        'id'            => 'footer-1',
+        'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        'before_title' => '<h3 class="titulo-menu-nav">', //añadimos contenedores por titulo
+        'after_title' => '</h3>' //cerramos los contenedores de titulo
+    ) );
+    register_sidebar( array(
+        'name'          => 'footer 2',
+        'id'            => 'footer-2',
+        'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        'before_title' => '<h3 class="titulo-menu-nav">', //añadimos contenedores por titulo
+        'after_title' => '</h3>' //cerramos los contenedores de titulo
+    ) );
+    register_sidebar( array(
+        'name'          => 'footer 3',
+        'id'            => 'footer-3',
+        'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        'before_title' => '<h3 class="titulo-menu-nav">', //añadimos contenedores por titulo
+        'after_title' => '</h3>' //cerramos los contenedores de titulo
+    ) );
+    register_sidebar( array(
+        'name'          => 'footer 4',
+        'id'            => 'footer-4',
+        'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        'before_title' => '<h3 class="titulo-menu-nav">', //añadimos contenedores por titulo
+        'after_title' => '</h3>' //cerramos los contenedores de titulo
+    ) );
+    register_sidebar( array(
+        'name'          => 'footer 5',
+        'id'            => 'footer-5',
+        'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        'before_title' => '<h3 class="titulo-menu-nav">', //añadimos contenedores por titulo
+        'after_title' => '</h3>' //cerramos los contenedores de titulo
+    ) );
+    register_sidebar( array(
+        'name'          => 'footer 6',
+        'id'            => 'footer-6',
+        'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        'before_title' => '<h3 class="titulo-menu-nav">', //añadimos contenedores por titulo
+        'after_title' => '</h3>' //cerramos los contenedores de titulo
+    ) );
 }
 
 add_action( 'widgets_init', 'ecommerce_widget' );
