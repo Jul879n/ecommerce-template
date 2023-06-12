@@ -8,7 +8,7 @@
         <div class="col-12">
           <div class="d-flex justify-content-between">
             <?php the_custom_logo(); ?>
-            <div class="col-6">
+            <div class="col-12 col-sm-8">
             <?php aws_get_search_form( true ); ?>
             </div>
             
