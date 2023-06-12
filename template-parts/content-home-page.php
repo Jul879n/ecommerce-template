@@ -167,6 +167,9 @@
 						</div>
 					</div>
 				</div>
+				<div class="card-footer d-flex justify-content-end">
+					<div><a href="#" class="btn btn-primary">Suscríbete</a></div>
+  </div>
 			</div>
 			<!--Suscríbete-->
 		</div>
