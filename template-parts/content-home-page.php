@@ -12,16 +12,22 @@
 
 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<!--banner superior-->
-	
+
 	<div id="bannerSuperior" class="carousel slide">
-	<div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-	<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-	<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-	<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-  </div>
+		<div class="carousel-indicators">
+			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+				aria-current="true" aria-label="Slide 1"></button>
+			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+				aria-label="Slide 2"></button>
+			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+				aria-label="Slide 3"></button>
+			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+				aria-label="Slide 4"></button>
+			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+				aria-label="Slide 5"></button>
+			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+				aria-label="Slide 6"></button>
+		</div>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
 				<?php
@@ -82,8 +88,16 @@
 		</button>
 	</div>
 	<!--banner superior-->
+
 	<div class="container">
 		<div class="row">
+			<!--medio de pago-->
+					<div class="card">
+						<div class="card-body">
+						<h2><?php echo esc_html( get_field('cuadro_1') ); ?></h2>
+						</div>
+					</div>
+			<!--medio de pago-->
 			<?php include get_template_directory() . '/assets/modulos/modulo-productos/loop-productos.php'; ?>
 		</div>
 	</div>
