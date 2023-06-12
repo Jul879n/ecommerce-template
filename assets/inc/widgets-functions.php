@@ -26,6 +26,14 @@ function ecommerce_widget() {
         'after_title' => '</h3>' //cerramos los contenedores de titulo
     ) );
     register_sidebar( array(
+        'name'          => 'busqueda',
+        'id'            => 'buscar',
+        'before_widget' => '<div class="columnas">',
+        'after_widget'  => '</div>',
+        'before_title' => '<h3 class="titulo-menu-nav">', //a単ñdimos contenedores por titulo
+        'after_title' => '</h3>' //cerramos los contenedores de titulo
+    ) );
+    register_sidebar( array(
         'name'          => 'nav-celular',
         'id'            => 'nav-responsivo',
         'before_widget' => '<div class="col-12">',

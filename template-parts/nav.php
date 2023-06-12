@@ -8,9 +8,9 @@
         <div class="col-12">
           <div class="d-flex justify-content-between">
             <?php the_custom_logo(); ?>
-            <form class="d-flex col-sm-5" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            </form>
+            <?php if (is_active_sidebar('buscar')) :
+              dynamic_sidebar('buscar');
+            endif; ?>
             <div class="d-flex justify-content-start w-20">
               <?php
               $image = get_field('promocion');
