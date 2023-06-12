@@ -9,11 +9,7 @@ jQuery(document).ready(function ($) {
   $(".woocommerce-cart-form").addClass("col-12 col-sm-8 me-4");
   $(".cart-collaterals").addClass("col-12 col-sm-4");
   $(".cart_totals").addClass("w-100");
+  setTimeout(function() {
+    $("#loading-screen").remove();
+  }, 500);
 });
-
-setTimeout(function() {
-  var element = document.getElementById("loading-screen");
-  if (element && element.parentNode) {
-    element.parentNode.removeChild(element);
-  }
-}, 500);
