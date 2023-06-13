@@ -13,5 +13,6 @@ jQuery(document).ready(function ($) {
     $("#loading-screen").remove();
   }, 500);
   $("#menu-ingresar-sesion").addClass("m-0 p-0");
-  $("#menu-ingresar-sesion .menu-item a").addClass("btn btn-primary ps-5 pe-5");
+  $("#menu-ingresar-sesion .menu-item a").eq(0).addClass("btn btn-primary ps-5 pe-5");
+  $("#menu-ingresar-sesion .menu-item a").eq(1).addClass("btn btn-light border text-primary border-primary ps-5 pe-5");
 });
