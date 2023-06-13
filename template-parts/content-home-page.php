@@ -134,7 +134,7 @@
 						</p>
 						<div class="container">
 							<div class="row">
-								<div class="col-4">
+								<div class="col-12 col-sm-4">
 									<?php
 									$image = get_field('beneficio_1_imagen');
 									if (!empty($image)) : ?>
@@ -142,7 +142,7 @@
 									<?php endif; ?>
 									<span><?php echo esc_html(get_field('beneficio_1_texto')); ?></span>
 								</div>
-								<div class="col-4">
+								<div class="col-12 col-sm-4">
 									<?php
 									$image = get_field('beneficio_2_imagen');
 									if (!empty($image)) : ?>
@@ -150,7 +150,7 @@
 									<?php endif; ?>
 									<span><?php echo esc_html(get_field('beneficio_2_texto')); ?></span>
 								</div>
-								<div class="col-4">
+								<div class="col-12 col-sm-4">
 									<div class="d-flex align-items-center">
 										<?php
 										$image = get_field('beneficio_3_imagen');
