@@ -42,6 +42,14 @@ function ecommerce_widget() {
         'after_title' => '</h3>' //cerramos los contenedores de titulo
     ) );
     register_sidebar( array(
+        'name'          => 'ingresar sesion',
+        'id'            => 'sesion',
+        'before_widget' => '<div class="columnas">',
+        'after_widget'  => '</div>',
+        'before_title' => '<h3 class="titulo-menu-nav">', //añadimos contenedores por titulo
+        'after_title' => '</h3>' //cerramos los contenedores de titulo
+    ) );
+    register_sidebar( array(
         'name'          => 'footer 1',
         'id'            => 'footer-1',
         'before_widget' => '<div>',

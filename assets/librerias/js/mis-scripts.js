@@ -12,4 +12,6 @@ jQuery(document).ready(function ($) {
   setTimeout(function() {
     $("#loading-screen").remove();
   }, 500);
+  $("#menu-ingresar-sesion").addClass("m-0 p-0");
+  $("#menu-ingresar-sesion .menu-item a").addClass("btn btn-primary ps-5 pe-5");
 });

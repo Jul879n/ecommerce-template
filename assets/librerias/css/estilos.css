@@ -46,9 +46,24 @@ a{
     top: 50%;
     left: 50%;
   }
+  .ver{
+    position: absolute;
+    visibility: hidden;
+  }
+  .fs-personalizado{
+    font-size: 70px;
+  }
 @media screen and (max-width: 768px) {
     .cart-collaterals{
         width: 100% !important;
     }
-    
+    .no-ver {
+        position: absolute;
+        visibility: hidden;
+        display: none !important;
+    }
+    .ver{
+        position: relative;
+        visibility: visible;
+    }
 }
