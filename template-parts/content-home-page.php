@@ -114,7 +114,7 @@
 				</div>
 			</div>
 			<!--medio de pago-->
-			<div class="col-12 col-sm-12">
+			<div class="row">
 				<?php include get_template_directory() . '/assets/modulos/modulo-productos/loop-productos.php'; ?>
 			</div>
 			<!--Suscríbete-->
