@@ -117,6 +117,21 @@
 			<div class="col-12 col-sm-12">
 				<?php include get_template_directory() . '/assets/modulos/modulo-productos/loop-productos.php'; ?>
 			</div>
+
+			<?php
+			$tarjeta_1 = get_field('tarjeta_1');
+			if ($tarjeta_1) : ?>
+				<div class="tarjeta">
+					<img src="<?php echo esc_url($tarjeta_1['fondo_1']['url']); ?>" alt="<?php echo esc_attr($tarjeta_1['fondo_1']['alt']); ?>" />
+					<div class="contenido">
+						<img src="<?php echo esc_url($tarjeta_1['miniatura_1']['url']); ?>" alt="<?php echo esc_attr($tarjeta_1['miniatura_1']['alt']); ?>" />
+						<h2><?php echo esc_html($tarjeta_1['titulo_1']); ?></h2>
+						<h3><?php echo esc_html($tarjeta_1['subtitulo_1']); ?></h3>
+						<p><?php echo esc_html($tarjeta_1['antes_de_titulo_1']); ?></p>
+					</div>
+				</div>
+			<?php endif; ?>
+
 			<!--Suscríbete-->
 			<div class="col-12 col-sm-12">
 				<div class="card p-0">
