@@ -238,23 +238,23 @@
 					if ($tarjeta_2): ?>
 						<div class="card beneficio">
 							<a class="enlace" href="#">
-								<img class="fondo rounded-2" src="<?php echo esc_url($tarjeta_2['fondo']['url']); ?>"
-									alt="<?php echo esc_url($tarjeta_2['fondo']['url']); ?>" />
+								<img class="fondo rounded-2" src="<?php echo esc_url($tarjeta_2['fondo_2']['url']); ?>"
+									alt="<?php echo esc_url($tarjeta_2['fondo_2']['url']); ?>" />
 								<div class="card-body rounded-bottom rounded-2"
 									style="background:linear-gradient(0deg, rgb(8,19,48) 0%, rgba(8,19,48, 0.0001) 100%)">
 									<div class="caja d-flex align-items-end">
 										<img style="width: 80px; height: 80px;" class="rounded-3"
-											src="<?php echo esc_url($tarjeta_2['miniatura']['url']); ?>"
-											alt="<?php echo esc_attr($tarjeta_2['miniatura']['alt']); ?>" />
+											src="<?php echo esc_url($tarjeta_2['miniatura_2']['url']); ?>"
+											alt="<?php echo esc_attr($tarjeta_2['miniatura_2']['alt']); ?>" />
 										<div class="text-light ms-2">
 											<span class="ante-titulo text-uppercase">
-												<?php echo esc_html($tarjeta_2['antes_de_titulo']); ?>
+												<?php echo esc_html($tarjeta_2['antes_de_titulo_2']); ?>
 											</span>
 											<h2 class="titulo">
-												<?php echo esc_html($tarjeta_2['titulo']); ?>
+												<?php echo esc_html($tarjeta_2['titulo_2']); ?>
 											</h2>
 											<span class="subtitulo">
-												<?php echo esc_html($tarjeta_2['subtitulo']); ?>
+												<?php echo esc_html($tarjeta_2['subtitulo_2']); ?>
 											</span>
 										</div>
 									</div>
