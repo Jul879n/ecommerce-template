@@ -12,9 +12,10 @@
 
 ?>
 
-<div class="site-footer">
+<div class="site-footer bg-white">
 	<div class="footer-container">
-		<div class="d-flex justify-content-center" style="z-index: 1;">
+		
+		<div class="d-flex justify-content-center bg-white" style="z-index: 1;">
 			<a class="btn bg-white border border-bottom-0" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
 				Ver mas
 			</a>
