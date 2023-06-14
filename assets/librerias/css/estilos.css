@@ -91,7 +91,7 @@ a{
     font-size: 14px;
     color: #999;
   }
-  footer .responsivo{
+  footer .responsivo li{
     width: 100% !important;
   }
 @media screen and (max-width: 768px) {
