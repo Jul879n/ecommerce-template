@@ -20,8 +20,8 @@
 				Ver mas
 			</a>
 		</div>
-		<div class="collapse" id="collapseExample">
-			<footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+		<div class="collapse container" id="collapseExample">
+			<footer class="row">
 				<?php if (is_active_sidebar('footer-1')) :
 					dynamic_sidebar('footer-1');
 				endif; ?>
