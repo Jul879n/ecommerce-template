@@ -60,7 +60,7 @@ function ecommerce_widget() {
     register_sidebar( array(
         'name'          => 'footer 2',
         'id'            => 'footer-2',
-        'before_widget' => '<div class="col">',
+        'before_widget' => '<div class="col columnas responsivo">',
         'after_widget'  => '</div>',
         'before_title' => '<h3 class="titulo-footer">', //añadimos contenedores por titulo
         'after_title' => '</h3>' //cerramos los contenedores de titulo
@@ -68,7 +68,7 @@ function ecommerce_widget() {
     register_sidebar( array(
         'name'          => 'footer 3',
         'id'            => 'footer-3',
-        'before_widget' => '<div class="col">',
+        'before_widget' => '<div class="col columnas responsivo">',
         'after_widget'  => '</div>',
         'before_title' => '<h3 class="titulo-footer">', //añadimos contenedores por titulo
         'after_title' => '</h3>' //cerramos los contenedores de titulo
@@ -76,7 +76,7 @@ function ecommerce_widget() {
     register_sidebar( array(
         'name'          => 'footer 4',
         'id'            => 'footer-4',
-        'before_widget' => '<div class="col">',
+        'before_widget' => '<div class="col columnas responsivo">',
         'after_widget'  => '</div>',
         'before_title' => '<h3 class="titulo-footer">', //añadimos contenedores por titulo
         'after_title' => '</h3>' //cerramos los contenedores de titulo
@@ -84,7 +84,7 @@ function ecommerce_widget() {
     register_sidebar( array(
         'name'          => 'footer 5',
         'id'            => 'footer-5',
-        'before_widget' => '<div class="col">',
+        'before_widget' => '<div class="col columnas responsivo">',
         'after_widget'  => '</div>',
         'before_title' => '<h3 class="titulo-footer">', //añadimos contenedores por titulo
         'after_title' => '</h3>' //cerramos los contenedores de titulo
@@ -92,7 +92,7 @@ function ecommerce_widget() {
     register_sidebar( array(
         'name'          => 'footer 6',
         'id'            => 'footer-6',
-        'before_widget' => '<div class="col">',
+        'before_widget' => '<div class="col columnas responsivo">',
         'after_widget'  => '</div>',
         'before_title' => '<h3 class="titulo-footer">', //añadimos contenedores por titulo
         'after_title' => '</h3>' //cerramos los contenedores de titulo
