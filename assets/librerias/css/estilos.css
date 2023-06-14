@@ -87,6 +87,10 @@ a{
     font-size: 14px;
     color: #333;
   }
+  footer a{
+    font-size: 14px;
+    color: #999;
+  }
 @media screen and (max-width: 768px) {
     .cart-collaterals{
         width: 100% !important;
