@@ -299,7 +299,7 @@
 <!--oferta del dia-->
 <div class="card mb-3">
   <div class="row">
-    <div class="col-md-7 rounded-start">
+    <div class="col-md-7 p-0">
 	<?php
 				$image = get_field('imagen_del_dia');
 				if (!empty($image)): ?>
