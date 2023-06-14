@@ -295,7 +295,28 @@
 					<?php endif; ?>
 				</div>
 			</div>
-
+<!--beneficios-->
+<!--oferta del dia-->
+<div class="card mb-3">
+  <div class="row">
+    <div class="col-md-7 rounded-start">
+	<?php
+				$image = get_field('imagen_del_dia');
+				if (!empty($image)): ?>
+					<img class="img-fluid rounded-start" src="<?php echo esc_url($image['url']); ?>"
+						alt="<?php echo esc_attr($image['alt']); ?>" />
+				<?php endif; ?>
+    </div>
+    <div class="col-md-5 bg-black text-light rounded-end">
+      <div class="card-body">
+	  <span class="card-text"><?php echo esc_html(get_field('subtitulo_del_dia')); ?></span>
+        <h5 class="card-title"><?php echo esc_html(get_field('titulo_del_dia')); ?></h5>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!--oferta del dia-->
 		</div>
 	</div>
 </div><!-- #post-<?php the_ID(); ?> -->
