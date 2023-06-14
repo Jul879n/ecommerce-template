@@ -25,4 +25,5 @@ jQuery(document).ready(function ($) {
     $(this).removeClass("shadow");
   });
   $("#menu-footer-final").addClass("m-0 p-0")
+  $("footer li ").addClass("ms-0");
 });
