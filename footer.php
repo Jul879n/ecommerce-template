@@ -21,7 +21,7 @@
 			</a>
 		</div>
 		<div class="collapse container" id="collapseExample">
-			<footer class="row">
+			<footer class="row mt-4">
 				<?php if (is_active_sidebar('footer-1')) :
 					dynamic_sidebar('footer-1');
 				endif; ?>
