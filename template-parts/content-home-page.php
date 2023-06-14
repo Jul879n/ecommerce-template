@@ -177,8 +177,8 @@
 				<?php
 				$tarjeta_1 = get_field('tarjeta_1');
 				if ($tarjeta_1) : ?>
-					<div class="card">
-						<div class="card-body" style="background-image: url(<?php echo esc_url($tarjeta_1['fondo']['url']); ?>);">
+					<div class="card" style="background-image: url(<?php echo esc_url($tarjeta_1['fondo']['url']); ?>);">
+						<div class="card-body">
 							<div class="caja d-flex ">
 								<img style="width: 80px; height: 80px;" class="rounded-3" src="<?php echo esc_url($tarjeta_1['miniatura']['url']); ?>" alt="<?php echo esc_attr($tarjeta_1['miniatura']['alt']); ?>" />
 								<div class="text-light">
