@@ -56,3 +56,4 @@ if ($featured_product->have_posts()) { // Comprobar si hay publicaciones encontr
 }
 wp_reset_postdata(); // Restablecer los datos de la consulta original
 ?>
+

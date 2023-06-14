@@ -15,54 +15,66 @@
 
 	<div id="bannerSuperior" class="carousel slide">
 		<div class="carousel-indicators">
-			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+				aria-current="true" aria-label="Slide 1"></button>
+			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+				aria-label="Slide 2"></button>
+			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+				aria-label="Slide 3"></button>
+			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+				aria-label="Slide 4"></button>
+			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+				aria-label="Slide 5"></button>
+			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+				aria-label="Slide 6"></button>
 		</div>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
 				<?php
 				$image = get_field('banner_1');
-				if (!empty($image)) : ?>
-					<img class="banner" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+				if (!empty($image)): ?>
+					<img class="banner" src="<?php echo esc_url($image['url']); ?>"
+						alt="<?php echo esc_attr($image['alt']); ?>" />
 				<?php endif; ?>
 			</div>
 			<div class="carousel-item">
 				<?php
 				$image = get_field('banner_2');
-				if (!empty($image)) : ?>
-					<img class="banner" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+				if (!empty($image)): ?>
+					<img class="banner" src="<?php echo esc_url($image['url']); ?>"
+						alt="<?php echo esc_attr($image['alt']); ?>" />
 				<?php endif; ?>
 			</div>
 			<div class="carousel-item">
 				<?php
 				$image = get_field('banner_3');
-				if (!empty($image)) : ?>
-					<img class="banner" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+				if (!empty($image)): ?>
+					<img class="banner" src="<?php echo esc_url($image['url']); ?>"
+						alt="<?php echo esc_attr($image['alt']); ?>" />
 				<?php endif; ?>
 			</div>
 			<div class="carousel-item">
 				<?php
 				$image = get_field('banner_4');
-				if (!empty($image)) : ?>
-					<img class="banner" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+				if (!empty($image)): ?>
+					<img class="banner" src="<?php echo esc_url($image['url']); ?>"
+						alt="<?php echo esc_attr($image['alt']); ?>" />
 				<?php endif; ?>
 			</div>
 			<div class="carousel-item">
 				<?php
 				$image = get_field('banner_5');
-				if (!empty($image)) : ?>
-					<img class="banner" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+				if (!empty($image)): ?>
+					<img class="banner" src="<?php echo esc_url($image['url']); ?>"
+						alt="<?php echo esc_attr($image['alt']); ?>" />
 				<?php endif; ?>
 			</div>
 			<div class="carousel-item">
 				<?php
 				$image = get_field('banner_6');
-				if (!empty($image)) : ?>
-					<img class="banner" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+				if (!empty($image)): ?>
+					<img class="banner" src="<?php echo esc_url($image['url']); ?>"
+						alt="<?php echo esc_attr($image['alt']); ?>" />
 				<?php endif; ?>
 			</div>
 		</div>
@@ -121,10 +133,16 @@
 			<div class="col-12 col-sm-12">
 				<div class="card p-0">
 					<div class="card-header d-flex justify-content-between">
-						<h2><?php echo esc_html(get_field('titulo')); ?></h2>
+						<h2>
+							<?php echo esc_html(get_field('titulo')); ?>
+						</h2>
 						<div class="border-start border-primary ps-3">
-							<span>$<?php echo esc_html(get_field('precio_original')); ?></span><br>
-							<span>$<?php echo esc_html(get_field('precio_oferta')); ?> / mes</span>
+							<span>$
+								<?php echo esc_html(get_field('precio_original')); ?>
+							</span><br>
+							<span>$
+								<?php echo esc_html(get_field('precio_oferta')); ?> / mes
+							</span>
 						</div>
 
 					</div>
@@ -137,27 +155,36 @@
 								<div class="col-12 col-sm-4">
 									<?php
 									$image = get_field('beneficio_1_imagen');
-									if (!empty($image)) : ?>
-										<img class="banner" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+									if (!empty($image)): ?>
+										<img class="banner" src="<?php echo esc_url($image['url']); ?>"
+											alt="<?php echo esc_attr($image['alt']); ?>" />
 									<?php endif; ?>
-									<span><?php echo esc_html(get_field('beneficio_1_texto')); ?></span>
+									<span>
+										<?php echo esc_html(get_field('beneficio_1_texto')); ?>
+									</span>
 								</div>
 								<div class="col-12 col-sm-4">
 									<?php
 									$image = get_field('beneficio_2_imagen');
-									if (!empty($image)) : ?>
-										<img class="banner" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+									if (!empty($image)): ?>
+										<img class="banner" src="<?php echo esc_url($image['url']); ?>"
+											alt="<?php echo esc_attr($image['alt']); ?>" />
 									<?php endif; ?>
-									<span><?php echo esc_html(get_field('beneficio_2_texto')); ?></span>
+									<span>
+										<?php echo esc_html(get_field('beneficio_2_texto')); ?>
+									</span>
 								</div>
 								<div class="col-12 col-sm-4">
 									<div class="d-flex align-items-center">
 										<?php
 										$image = get_field('beneficio_3_imagen');
-										if (!empty($image)) : ?>
-											<img class="banner" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+										if (!empty($image)): ?>
+											<img class="banner" src="<?php echo esc_url($image['url']); ?>"
+												alt="<?php echo esc_attr($image['alt']); ?>" />
 										<?php endif; ?>
-										<span><?php echo esc_html(get_field('beneficio_3_texto')); ?></span>
+										<span>
+											<?php echo esc_html(get_field('beneficio_3_texto')); ?>
+										</span>
 									</div>
 
 								</div>
@@ -173,24 +200,101 @@
 			<!--Suscríbete-->
 
 			<!--beneficios-->
-			<div class="col-12 col-sm-4">
-				<?php
-				$tarjeta_1 = get_field('tarjeta_1');
-				if ($tarjeta_1) : ?>
-					<div class="card" style="background-image: url(<?php echo esc_url($tarjeta_1['fondo']['url']); ?>);">
-						<div class="card-body">
-							<div class="caja d-flex ">
-								<img style="width: 80px; height: 80px;" class="rounded-3" src="<?php echo esc_url($tarjeta_1['miniatura']['url']); ?>" alt="<?php echo esc_attr($tarjeta_1['miniatura']['alt']); ?>" />
-								<div class="text-light">
-									<p><?php echo esc_html($tarjeta_1['antes_de_titulo']); ?></p>
-									<h2><?php echo esc_html($tarjeta_1['titulo']); ?></h2>
-									<h3><?php echo esc_html($tarjeta_1['subtitulo']); ?></h3>
+			<div class="row mt-3 mb-3">
+				<div class="col-12 col-sm-4">
+					<?php
+					$tarjeta_1 = get_field('tarjeta_1');
+					if ($tarjeta_1): ?>
+						<div class="card beneficio">
+							<a class="enlace" href="#">
+								<img class="fondo rounded-2" src="<?php echo esc_url($tarjeta_1['fondo']['url']); ?>"
+									alt="<?php echo esc_url($tarjeta_1['fondo']['url']); ?>" />
+								<div class="card-body rounded-bottom rounded-2"
+									style="background:linear-gradient(0deg, rgb(8,19,48) 0%, rgba(8,19,48, 0.0001) 100%)">
+									<div class="caja d-flex align-items-end">
+										<img style="width: 80px; height: 80px;" class="rounded-3"
+											src="<?php echo esc_url($tarjeta_1['miniatura']['url']); ?>"
+											alt="<?php echo esc_attr($tarjeta_1['miniatura']['alt']); ?>" />
+										<div class="text-light ms-2">
+											<span class="ante-titulo text-uppercase">
+												<?php echo esc_html($tarjeta_1['antes_de_titulo']); ?>
+											</span>
+											<h2 class="titulo">
+												<?php echo esc_html($tarjeta_1['titulo']); ?>
+											</h2>
+											<span class="subtitulo">
+												<?php echo esc_html($tarjeta_1['subtitulo']); ?>
+											</span>
+										</div>
+									</div>
 								</div>
-							</div>
+							</a>
 						</div>
-					</div>
-				<?php endif; ?>
+					<?php endif; ?>
+				</div>
+				<div class="col-12 col-sm-4">
+					<?php
+					$tarjeta_1 = get_field('tarjeta_2');
+					if ($tarjeta_1): ?>
+						<div class="card beneficio">
+							<a class="enlace" href="#">
+								<img class="fondo rounded-2" src="<?php echo esc_url($tarjeta_1['fondo']['url']); ?>"
+									alt="<?php echo esc_url($tarjeta_1['fondo']['url']); ?>" />
+								<div class="card-body rounded-bottom rounded-2"
+									style="background:linear-gradient(0deg, rgb(8,19,48) 0%, rgba(8,19,48, 0.0001) 100%)">
+									<div class="caja d-flex align-items-end">
+										<img style="width: 80px; height: 80px;" class="rounded-3"
+											src="<?php echo esc_url($tarjeta_1['miniatura']['url']); ?>"
+											alt="<?php echo esc_attr($tarjeta_1['miniatura']['alt']); ?>" />
+										<div class="text-light ms-2">
+											<span class="ante-titulo text-uppercase">
+												<?php echo esc_html($tarjeta_1['antes_de_titulo']); ?>
+											</span>
+											<h2 class="titulo">
+												<?php echo esc_html($tarjeta_1['titulo']); ?>
+											</h2>
+											<span class="subtitulo">
+												<?php echo esc_html($tarjeta_1['subtitulo']); ?>
+											</span>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+					<?php endif; ?>
+				</div>
+				<div class="col-12 col-sm-4">
+					<?php
+					$tarjeta_1 = get_field('tarjeta_3');
+					if ($tarjeta_1): ?>
+						<div class="card beneficio">
+							<a class="enlace" href="#">
+								<img class="fondo rounded-2" src="<?php echo esc_url($tarjeta_1['fondo']['url']); ?>"
+									alt="<?php echo esc_url($tarjeta_1['fondo']['url']); ?>" />
+								<div class="card-body rounded-bottom rounded-2" style="background:linear-gradient(0deg, rgb(8,19,48) 0%, rgba(8,19,48, 0.0001) 100%)">
+									<div class="caja d-flex align-items-end">
+										<img style="width: 80px; height: 80px;" class="rounded-3"
+											src="<?php echo esc_url($tarjeta_1['miniatura']['url']); ?>"
+											alt="<?php echo esc_attr($tarjeta_1['miniatura']['alt']); ?>" />
+										<div class="text-light ms-2">
+											<span class="ante-titulo text-uppercase">
+												<?php echo esc_html($tarjeta_1['antes_de_titulo']); ?>
+											</span>
+											<h2 class="titulo">
+												<?php echo esc_html($tarjeta_1['titulo']); ?>
+											</h2>
+											<span class="subtitulo">
+												<?php echo esc_html($tarjeta_1['subtitulo']); ?>
+											</span>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+					<?php endif; ?>
+				</div>
 			</div>
+
 		</div>
 	</div>
 </div><!-- #post-<?php the_ID(); ?> -->

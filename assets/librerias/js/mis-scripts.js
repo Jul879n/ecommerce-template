@@ -9,7 +9,7 @@ jQuery(document).ready(function ($) {
   $(".woocommerce-cart-form").addClass("col-12 col-sm-8 me-4");
   $(".cart-collaterals").addClass("col-12 col-sm-4");
   $(".cart_totals").addClass("w-100");
-  setTimeout(function() {
+  setTimeout(function () {
     $("#loading-screen").remove();
   }, 500);
   $("#menu-ingresar-sesion").addClass("m-0 p-0");
@@ -26,4 +26,6 @@ jQuery(document).ready(function ($) {
   });
   $("#menu-footer-final").addClass("m-0 p-0")
   $("footer li ").addClass("ms-0");
+  
 });
+

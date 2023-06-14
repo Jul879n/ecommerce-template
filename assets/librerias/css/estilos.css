@@ -72,7 +72,7 @@ a{
   }
   .site-footer {
     position: relative;
-    min-height: 20vh;
+    min-height: 15vh;
   }
   .footer-container {
     position: absolute;
@@ -93,6 +93,55 @@ a{
   }
   footer .responsivo li{
     width: 100% !important;
+  }
+  .beneficio{
+    position: relative;
+    z-index: 0;
+    height: 250px;
+    width: auto;
+  }
+  .beneficio .card-body{
+    z-index: 2;
+    -webkit-align-items: center;
+    align-items: center;
+    bottom: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-flex;
+    display: flex;
+    left: 0;
+    padding: 16px;
+    position: absolute;
+    width: 100%;
+  }
+  .beneficio .fondo{
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top;
+    position: absolute;
+    width: 100%;
+  }
+  .beneficio .titulo{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.09;
+  }
+  .beneficio .ante-titulo{
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.33;
+    margin-bottom: 4px;
+  }
+  .beneficio .subtitulo{
+    font-size: 18px;
+    letter-spacing: .4px;
+    line-height: 1.11;
+    margin-top: 4px;
   }
 @media screen and (max-width: 768px) {
     .cart-collaterals{
