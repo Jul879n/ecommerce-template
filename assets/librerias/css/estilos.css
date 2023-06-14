@@ -70,6 +70,16 @@ a{
   .fs-personalizado{
     font-size: 70px;
   }
+  .site-footer {
+    position: relative;
+    min-height: 40vh;
+  }
+  .footer-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10px;
+  }
 @media screen and (max-width: 768px) {
     .cart-collaterals{
         width: 100% !important;
