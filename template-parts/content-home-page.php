@@ -179,11 +179,14 @@
 				if ($tarjeta_1) : ?>
 					<div class="card">
 						<div class="card-body" style="background-image: url(<?php echo esc_url($tarjeta_1['fondo_1']['url']); ?>);">
-							<img src="<?php echo esc_url($tarjeta_1['miniatura_1']['url']); ?>" alt="<?php echo esc_attr($tarjeta_1['miniatura_1']['alt']); ?>" />
-							<p><?php echo esc_html($tarjeta_1['antes_de_titulo_1']); ?></p>
-							<h2><?php echo esc_html($tarjeta_1['titulo_1']); ?></h2>
-							<h3><?php echo esc_html($tarjeta_1['subtitulo_1']); ?></h3>
-
+							<div class="caja d-flex ">
+								<img class="w-50" src="<?php echo esc_url($tarjeta_1['miniatura_1']['url']); ?>" alt="<?php echo esc_attr($tarjeta_1['miniatura_1']['alt']); ?>" />
+								<div>
+									<p><?php echo esc_html($tarjeta_1['antes_de_titulo_1']); ?></p>
+									<h2><?php echo esc_html($tarjeta_1['titulo_1']); ?></h2>
+									<h3><?php echo esc_html($tarjeta_1['subtitulo_1']); ?></h3>
+								</div>
+							</div>
 						</div>
 					</div>
 				<?php endif; ?>
