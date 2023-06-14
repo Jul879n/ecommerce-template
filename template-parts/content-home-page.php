@@ -178,13 +178,13 @@
 				$tarjeta_1 = get_field('tarjeta_1');
 				if ($tarjeta_1) : ?>
 					<div class="card">
-						<div class="card-body" style="background-image: url(<?php echo esc_url($tarjeta_1['fondo_1']['url']); ?>);">
+						<div class="card-body" style="background-image: url(<?php echo esc_url($tarjeta_1['fondo']['url']); ?>);">
 							<div class="caja d-flex ">
-								<img style="width: 80px; height: 80px;" class="rounded-3" src="<?php echo esc_url($tarjeta_1['miniatura_1']['url']); ?>" alt="<?php echo esc_attr($tarjeta_1['miniatura_1']['alt']); ?>" />
+								<img style="width: 80px; height: 80px;" class="rounded-3" src="<?php echo esc_url($tarjeta_1['miniatura']['url']); ?>" alt="<?php echo esc_attr($tarjeta_1['miniatura']['alt']); ?>" />
 								<div class="text-light">
-									<p><?php echo esc_html($tarjeta_1['antes_de_titulo_1']); ?></p>
-									<h2><?php echo esc_html($tarjeta_1['titulo_1']); ?></h2>
-									<h3><?php echo esc_html($tarjeta_1['subtitulo_1']); ?></h3>
+									<p><?php echo esc_html($tarjeta_1['antes_de_titulo']); ?></p>
+									<h2><?php echo esc_html($tarjeta_1['titulo']); ?></h2>
+									<h3><?php echo esc_html($tarjeta_1['subtitulo']); ?></h3>
 								</div>
 							</div>
 						</div>
