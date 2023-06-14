@@ -15,4 +15,14 @@ jQuery(document).ready(function ($) {
   $("#menu-ingresar-sesion").addClass("m-0 p-0");
   $("#menu-ingresar-sesion .menu-item a").eq(0).addClass("btn btn-primary ps-5 pe-5");
   $("#menu-ingresar-sesion .menu-item a").eq(1).addClass("btn btn-light border text-primary border-primary ps-5 pe-5");
+  $(".woocommerce-breadcrumb a").eq(0).addClass("border-start ps-2 border-primary");
+  $(".products .product").addClass("card sombra");
+  $(".products .product").find(".ajax_add_to_cart").remove();
+  $(".sombra").mouseover(function () {
+    $(this).addClass("shadow");
+  });
+  $(".sombra").mouseout(function () {
+    $(this).removeClass("shadow");
+  });
+  $("#menu-footer-final").addClass("m-0 p-0")
 });

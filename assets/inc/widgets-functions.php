@@ -26,9 +26,9 @@ function ecommerce_widget() {
         'after_title' => '</h3>' //cerramos los contenedores de titulo
     ) );
     register_sidebar( array(
-        'name'          => 'busqueda',
-        'id'            => 'buscar',
-        'before_widget' => '<div class="columnas">',
+        'name'          => 'breadcrumb',
+        'id'            => 'breadcrumb',
+        'before_widget' => '<div class="pt-3">',
         'after_widget'  => '</div>',
         'before_title' => '<h3 class="titulo-menu-nav">', //a単ñdimos contenedores por titulo
         'after_title' => '</h3>' //cerramos los contenedores de titulo
@@ -36,7 +36,7 @@ function ecommerce_widget() {
     register_sidebar( array(
         'name'          => 'nav-celular',
         'id'            => 'nav-responsivo',
-        'before_widget' => '<div class="col-12">',
+        'before_widget' => '<div class="columnas responsivo">',
         'after_widget'  => '</div>',
         'before_title' => '<h3 class="titulo-menu-nav">', //añadimos contenedores por titulo
         'after_title' => '</h3>' //cerramos los contenedores de titulo
@@ -93,6 +93,14 @@ function ecommerce_widget() {
         'name'          => 'footer 6',
         'id'            => 'footer-6',
         'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        'before_title' => '<h3 class="titulo-menu-nav">', //añadimos contenedores por titulo
+        'after_title' => '</h3>' //cerramos los contenedores de titulo
+    ) );
+    register_sidebar( array(
+        'name'          => 'footer final',
+        'id'            => 'footer-final',
+        'before_widget' => '<div class="columnas-footer">',
         'after_widget'  => '</div>',
         'before_title' => '<h3 class="titulo-menu-nav">', //añadimos contenedores por titulo
         'after_title' => '</h3>' //cerramos los contenedores de titulo

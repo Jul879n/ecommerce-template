@@ -1,6 +1,23 @@
-.columnas ul{
+body{
+    background-color: #ededed;
+}.columnas ul{
     display: flex;
     justify-content: space-between;
+}
+.responsivo ul{
+    display: contents !important;
+}
+.responsivo ul li{
+    text-align: start !important;
+    width: 50% !important;
+}
+.columnas-footer ul{
+    display: flex;
+}
+.columnas-footer ul li{
+    list-style: none;
+    text-align: center;
+    margin: 5px;
 }
 a{
     text-decoration: none;

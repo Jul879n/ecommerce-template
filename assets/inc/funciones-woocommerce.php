@@ -102,3 +102,13 @@ function columnas_cart_medio(){
     echo '</div>';
 }
 add_action( 'woocommerce_cart_collaterals', 'columnas_cart_medio', 10 );
+
+function tarjeta_producto_arriba(){
+    echo'<div class="card-body">';
+}
+add_action( 'woocommerce_before_shop_loop_item_title', 'tarjeta_producto_arriba', 10 );
+
+function tarjeta_producto_abajo(){
+    echo'</div>';
+}
+add_action( 'woocommerce_after_shop_loop_item', 'tarjeta_producto_abajo', 10 );

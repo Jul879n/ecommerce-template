@@ -15,10 +15,16 @@ get_header();
 	<div id="loading-screen">
 		<div class="spinner-border text-warning" role="status"><span class="visually-hidden">Loading...</span></div>
 	</div>
-	<div class="card shadow mt-5 mb-5">
-		<div class="card-header">
-			<button class="volver btn">volver</button>
+	<div class="mt-5 d-flex justify-content-between align-items-center">
+		<div class="d-flex align-items-center"><button class="volver btn">volver</button><?php if (is_active_sidebar('breadcrumb')) :
+																								dynamic_sidebar('breadcrumb');
+																							endif; ?>
 		</div>
+		<div class="d-flex align-items-center"><a href="#" class="pe-2">Compartir</a> <a href="#" class="border-start ps-2 border-primary">Vender uno igual</a>
+		</div>
+	</div>
+	<div class="card shadow  mb-5">
+
 		<div class="card-body">
 
 
