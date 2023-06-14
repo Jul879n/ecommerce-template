@@ -80,6 +80,13 @@ a{
     width: 100%;
     height: 10px;
   }
+  .titulo-footer{
+    font-weight: 600;
+    margin: 0 0 5px;
+    margin-bottom: 14px;
+    font-size: 14px;
+    color: #333;
+  }
 @media screen and (max-width: 768px) {
     .cart-collaterals{
         width: 100% !important;
