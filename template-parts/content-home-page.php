@@ -180,7 +180,7 @@
 					<div class="card">
 						<div class="card-body" style="background-image: url(<?php echo esc_url($tarjeta_1['fondo_1']['url']); ?>);">
 							<div class="caja d-flex ">
-								<img class="w-50" src="<?php echo esc_url($tarjeta_1['miniatura_1']['url']); ?>" alt="<?php echo esc_attr($tarjeta_1['miniatura_1']['alt']); ?>" />
+								<img style="width: 80px; height: auto;" class="rounded-3" src="<?php echo esc_url($tarjeta_1['miniatura_1']['url']); ?>" alt="<?php echo esc_attr($tarjeta_1['miniatura_1']['alt']); ?>" />
 								<div class="text-light">
 									<p><?php echo esc_html($tarjeta_1['antes_de_titulo_1']); ?></p>
 									<h2><?php echo esc_html($tarjeta_1['titulo_1']); ?></h2>
