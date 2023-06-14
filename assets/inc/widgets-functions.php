@@ -52,7 +52,7 @@ function ecommerce_widget() {
     register_sidebar( array(
         'name'          => 'footer 1',
         'id'            => 'footer-1',
-        'before_widget' => '<div class="col">',
+        'before_widget' => '<div class="col columnas responsivo">',
         'after_widget'  => '</div>',
         'before_title' => '<h3 class="titulo-footer">', //añadimos contenedores por titulo
         'after_title' => '</h3>' //cerramos los contenedores de titulo
