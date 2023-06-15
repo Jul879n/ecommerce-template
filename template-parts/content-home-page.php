@@ -268,7 +268,7 @@
 			</div>
 			<!--beneficios-->
 			<!--oferta del dia-->
-			<div class="col-12 col-sm-12">
+			<div class="col-12 col-sm-12 oferta-del-dia">
 				<div class="card p-0">
 					<div class="container-fluid">
 						<div class="row">
