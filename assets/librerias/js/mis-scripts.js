@@ -45,4 +45,8 @@ jQuery(document).ready(function ($) {
       $(".oferta-del-dia .bg-black").addClass("rounded-end");
     }
   });
+  $(".site-footer .nav-link").click(function() {
+    $(this).toggleClass("boton-footer");
+    $(this).find("i").toggleClass("fa-angle-down fa-angle-up");
+  });
 });

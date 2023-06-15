@@ -15,11 +15,11 @@
 <div class="site-footer bg-white">
 	<div class="footer-container">
 		<div class="nav nav-tabs bg-white d-flex justify-content-center" id="nav-tab" role="tablist" style="z-index: 1;">
-			<a class="nav-link active" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-				Ver mas
+			<a class="nav-link  active" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+				Ver mas <i class="fa-solid fa-angle-down ms-2"></i>
 			</a>
 		</div>
-		<div class="collapse bg-secondary" id="collapseExample">
+		<div class="collapse" id="collapseExample">
 			<div class="container">
 				<footer class="row mt-4">
 					<?php if (is_active_sidebar('footer-1')) :
