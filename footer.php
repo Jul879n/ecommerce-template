@@ -19,27 +19,29 @@
 				Ver mas
 			</a>
 		</div>
-		<div class="collapse container " id="collapseExample">
-			<footer class="row mt-4">
-				<?php if (is_active_sidebar('footer-1')) :
-					dynamic_sidebar('footer-1');
-				endif; ?>
-				<?php if (is_active_sidebar('footer-2')) :
-					dynamic_sidebar('footer-2');
-				endif; ?>
-				<?php if (is_active_sidebar('footer-3')) :
-					dynamic_sidebar('footer-3');
-				endif; ?>
-				<?php if (is_active_sidebar('footer-4')) :
-					dynamic_sidebar('footer-4');
-				endif; ?>
-				<?php if (is_active_sidebar('footer-5')) :
-					dynamic_sidebar('footer-5');
-				endif; ?>
-				<?php if (is_active_sidebar('footer-6')) :
-					dynamic_sidebar('footer-6');
-				endif; ?>
-			</footer>
+		<div class="collapse bg-secondary" id="collapseExample">
+			<div class="container">
+				<footer class="row mt-4">
+					<?php if (is_active_sidebar('footer-1')) :
+						dynamic_sidebar('footer-1');
+					endif; ?>
+					<?php if (is_active_sidebar('footer-2')) :
+						dynamic_sidebar('footer-2');
+					endif; ?>
+					<?php if (is_active_sidebar('footer-3')) :
+						dynamic_sidebar('footer-3');
+					endif; ?>
+					<?php if (is_active_sidebar('footer-4')) :
+						dynamic_sidebar('footer-4');
+					endif; ?>
+					<?php if (is_active_sidebar('footer-5')) :
+						dynamic_sidebar('footer-5');
+					endif; ?>
+					<?php if (is_active_sidebar('footer-6')) :
+						dynamic_sidebar('footer-6');
+					endif; ?>
+				</footer>
+			</div>
 		</div>
 		<div class="bg-white" style="z-index: 0;">
 			<div class="container">
