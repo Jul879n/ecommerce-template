@@ -185,8 +185,7 @@
 			<!--Suscríbete-->
 
 			<!--beneficios-->
-			<div class="row mb-3">
-				<div class="col-12 col-sm-4 mt-3">
+				<div class="col-12 col-sm-4 mt-3 mb-3">
 					<?php
 					$tarjeta_1 = get_field('tarjeta_1');
 					if ($tarjeta_1) : ?>
@@ -213,7 +212,7 @@
 						</div>
 					<?php endif; ?>
 				</div>
-				<div class="col-12 col-sm-4 mt-3">
+				<div class="col-12 col-sm-4 mt-3 mb-3">
 					<?php
 					$tarjeta_2 = get_field('tarjeta_2');
 					if ($tarjeta_2) : ?>
@@ -240,7 +239,7 @@
 						</div>
 					<?php endif; ?>
 				</div>
-				<div class="col-12 col-sm-4 mt-3">
+				<div class="col-12 col-sm-4 mt-3 mb-3">
 					<?php
 					$tarjeta_3 = get_field('tarjeta_3');
 					if ($tarjeta_3) : ?>
@@ -267,7 +266,6 @@
 						</div>
 					<?php endif; ?>
 				</div>
-			</div>
 			<!--beneficios-->
 			<!--oferta del dia-->
 			<div class="col-12 col-sm-12">
