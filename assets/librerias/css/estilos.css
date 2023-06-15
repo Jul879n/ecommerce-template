@@ -205,6 +205,27 @@ footer .responsivo li
   margin-top: 4px;
 }
 
+.tarjeta-info:nth-child(2):before{
+  background-color: #e2e2e2;
+  content: "";
+  display: block;
+  height: 65px;
+  margin-top: -32.5px;
+  position: absolute;
+  top: 50%;
+  width: 1px;
+}
+.tarjeta-info:nth-child(2):after {
+  right: 0;
+  background-color: #e2e2e2;
+  content: "";
+  display: block;
+  height: 65px;
+  margin-top: -32.5px;
+  position: absolute;
+  top: 50%;
+  width: 1px;
+}
 @media screen and (max-width: 768px)
 {
   .cart-collaterals
