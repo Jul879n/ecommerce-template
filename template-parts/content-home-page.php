@@ -282,7 +282,8 @@
 							<div class="col-12 col-sm-5 bg-black rounded-end text-light d-flex align-items-center">
 								<div class="card-body">
 									<span class="card-text text-uppercase"><?php echo esc_html(get_field('subtitulo_del_dia')); ?></span>
-									<h5 class="card-title text-uppercase"><?php echo esc_html(get_field('titulo_del_dia')); ?></h5>
+									<h2 class="card-title text-uppercase"><?php echo esc_html(get_field('titulo_del_dia')); ?></h2>
+									<a class="btn text-light" href="#">Ver más</a>
 								</div>
 							</div>
 						</div>
