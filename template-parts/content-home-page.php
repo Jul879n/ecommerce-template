@@ -279,12 +279,10 @@
 							<img class="img-fluid rounded-start" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 						<?php endif; ?>
 					</div>
-					<div class="col-md-5 bg-black text-light rounded-end">
-						<div class="card-body d-flex align-items-center">
-							<div>
-								<span class="card-text text-uppercase">d<?php echo esc_html(get_field('subtitulo_del_dia')); ?></span>
-								<h5 class="card-title text-uppercase">d<?php echo esc_html(get_field('titulo_del_dia')); ?></h5>
-							</div>
+					<div class="col-md-5 bg-black text-light rounded-end d-flex align-items-center">
+						<div class="card-body ">
+							<span class="card-text text-uppercase">d<?php echo esc_html(get_field('subtitulo_del_dia')); ?></span>
+							<h5 class="card-title text-uppercase">d<?php echo esc_html(get_field('titulo_del_dia')); ?></h5>
 						</div>
 					</div>
 				</div>
