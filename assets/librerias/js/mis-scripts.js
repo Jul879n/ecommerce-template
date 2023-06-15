@@ -33,7 +33,7 @@ jQuery(document).ready(function ($) {
   $("#menu-footer-final").addClass("m-0 p-0");
   $("footer li ").addClass("ms-0");
   $(window).on("resize", function () {
-    if ($(window).width() <= 768) {
+    if ($(window).width() <= 769) {
       $(".oferta-del-dia .bg-black").removeClass("rounded-end");
       $(".oferta-del-dia .img-fluid").removeClass("rounded-start");
       $(".oferta-del-dia .bg-black").addClass("rounded-bottom");
