@@ -40,9 +40,9 @@ jQuery(document).ready(function ($) {
       $(".oferta-del-dia .img-fluid").addClass("rounded-top");
     } else {
       $(".oferta-del-dia .img-fluid").removeClass("rounded-top");
-      $(".oferta-del-dia").removeClass("rounded-bottom");
+      $(".oferta-del-dia .bg-black").removeClass("rounded-bottom");
       $(".oferta-del-dia .img-fluid").addClass("rounded-start");
-      $(".oferta-del-dia").addClass("rounded-end");
+      $(".oferta-del-dia .bg-black").addClass("rounded-end");
     }
   });
 });
