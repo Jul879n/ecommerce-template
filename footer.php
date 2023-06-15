@@ -14,13 +14,12 @@
 
 <div class="site-footer bg-white">
 	<div class="footer-container">
-
-		<div class="d-flex justify-content-center bg-white" style="z-index: 1;">
-			<a class="btn bg-white border border-bottom-0" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+		<div class="nav nav-tabs bg-white d-flex justify-content-center" id="nav-tab" role="tablist" style="z-index: 1;">
+			<a class="nav-link active" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
 				Ver mas
 			</a>
 		</div>
-		<div class="collapse container" id="collapseExample">
+		<div class="collapse container " id="collapseExample">
 			<footer class="row mt-4">
 				<?php if (is_active_sidebar('footer-1')) :
 					dynamic_sidebar('footer-1');
@@ -42,7 +41,7 @@
 				endif; ?>
 			</footer>
 		</div>
-		<div class="bg-white border-top" style="z-index: 0;">
+		<div class="bg-white" style="z-index: 0;">
 			<div class="container">
 				<?php if (is_active_sidebar('footer-final')) :
 					dynamic_sidebar('footer-final');
