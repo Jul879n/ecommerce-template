@@ -49,4 +49,5 @@ jQuery(document).ready(function ($) {
     $(this).toggleClass("boton-footer");
     $(this).find("i").toggleClass("fa-angle-down fa-angle-up");
   });
+  $(".product .onsale").remove();
 });
