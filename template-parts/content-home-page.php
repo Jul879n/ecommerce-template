@@ -281,8 +281,8 @@
 					</div>
 					<div class="col-md-5 bg-black text-light rounded-end d-flex align-items-center">
 						<div class="card-body ">
-							<span class="card-text text-uppercase">d<?php echo esc_html(get_field('subtitulo_del_dia')); ?></span>
-							<h5 class="card-title text-uppercase">d<?php echo esc_html(get_field('titulo_del_dia')); ?></h5>
+							<span class="card-text text-uppercase"><?php echo esc_html(get_field('subtitulo_del_dia')); ?></span>
+							<h5 class="card-title text-uppercase"><?php echo esc_html(get_field('titulo_del_dia')); ?></h5>
 						</div>
 					</div>
 				</div>
