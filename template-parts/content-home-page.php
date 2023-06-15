@@ -272,7 +272,7 @@
 				<div class="card p-0">
 					<div class="container-fluid">
 						<div class="row">
-							<div class="col-12 col-sm-7">
+							<div class="col-12 col-sm-7 p-0">
 								<?php
 								$image = get_field('imagen_del_dia');
 								if (!empty($image)) : ?>
