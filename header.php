@@ -57,8 +57,7 @@
 										dynamic_sidebar('nav1');
 									endif; ?>
 									<?php if (is_active_sidebar('nav2')) :
-										dynamic_sidebar('nav2');
-									endif; ?>
+										dynamic_sidebar('nav2'); endif; ?>
 									<?php if (is_active_sidebar('nav3')) :
 										dynamic_sidebar('nav3');
 									endif; ?>

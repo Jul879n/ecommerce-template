@@ -50,4 +50,10 @@ jQuery(document).ready(function ($) {
     $(this).find("i").toggleClass("fa-angle-down fa-angle-up");
   });
   $(".product .onsale").remove();
+  $(".menu-desplegable").attr('data-bs-toggle', 'tooltip');
+  $(".menu-desplegable").attr('data-bs-html', 'true');
+  $(".menu-desplegable").attr('data-bs-title', $(".sub-menu").detach().html());
+
+  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 });

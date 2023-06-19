@@ -15,8 +15,9 @@ function js_script()
         
         /*encolamos los JS*/
         //wp_enqueue_script('titan-js', array('jquery'), true);
-        wp_enqueue_script('mi-js', array('jquery'), true);
         wp_enqueue_script('bootstrap-js');
+        wp_enqueue_script('mi-js', array('jquery'), true);
+        
 
     }
 }
