@@ -11,6 +11,9 @@
 ?>
 
 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<div id="loading-screen">
+		<div class="spinner-border text-warning" role="status"><span class="visually-hidden">Loading...</span></div>
+	</div>
 	<!--banner superior-->
 
 	<div id="bannerSuperior" class="carousel slide">
