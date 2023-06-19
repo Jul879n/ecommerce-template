@@ -58,4 +58,7 @@ jQuery(document).ready(function ($) {
   const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
   $("#menu-derecha-nav li").eq(3).find("a").html('<i class="fa-solid fa-cart-shopping"></i>');
+  $("#menu-izquierda-nav li a").addClass("d-flex align-items-center");
+  $("#menu-izquierda-nav li").eq(0).find("a").html('<i class="fs-2 fa-solid fa-location-dot"></i><div class="ps-2">Ingresa tu <br> ubicacion</div>');
+  
 });
