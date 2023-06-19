@@ -56,4 +56,6 @@ jQuery(document).ready(function ($) {
 
   const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
   const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+  $("#menu-derecha-nav li").eq(3).find("a").html('<i class="fa-solid fa-cart-shopping"></i>');
 });
