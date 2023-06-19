@@ -27,42 +27,42 @@
 				<?php
 				$image = get_field('banner_1');
 				if (!empty($image)) : ?>
-					<img class="banner" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+					<img class="banner w-100" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 				<?php endif; ?>
 			</div>
 			<div class="carousel-item">
 				<?php
 				$image = get_field('banner_2');
 				if (!empty($image)) : ?>
-					<img class="banner" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+					<img class="banner w-100" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 				<?php endif; ?>
 			</div>
 			<div class="carousel-item">
 				<?php
 				$image = get_field('banner_3');
 				if (!empty($image)) : ?>
-					<img class="banner" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+					<img class="banner w-100" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 				<?php endif; ?>
 			</div>
 			<div class="carousel-item">
 				<?php
 				$image = get_field('banner_4');
 				if (!empty($image)) : ?>
-					<img class="banner" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+					<img class="banner w-100" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 				<?php endif; ?>
 			</div>
 			<div class="carousel-item">
 				<?php
 				$image = get_field('banner_5');
 				if (!empty($image)) : ?>
-					<img class="banner" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+					<img class="banner w-100" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 				<?php endif; ?>
 			</div>
 			<div class="carousel-item">
 				<?php
 				$image = get_field('banner_6');
 				if (!empty($image)) : ?>
-					<img class="banner" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+					<img class="banner w-100" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 				<?php endif; ?>
 			</div>
 		</div>
@@ -185,6 +185,7 @@
 			<!--Suscríbete-->
 
 			<!--beneficios-->
+			<h2>Beneficios de Mercado Puntos</h2>
 			<div class="col-12 col-sm-4 mt-3 mb-3">
 				<?php
 				$tarjeta_1 = get_field('tarjeta_1');
@@ -199,9 +200,9 @@
 										<span class="ante-titulo text-uppercase">
 											<?php echo esc_html($tarjeta_1['antes_de_titulo']); ?>
 										</span>
-										<h2 class="titulo">
+										<h3 class="titulo">
 											<?php echo esc_html($tarjeta_1['titulo']); ?>
-										</h2>
+										</h3>
 										<span class="subtitulo">
 											<?php echo esc_html($tarjeta_1['subtitulo']); ?>
 										</span>
@@ -226,9 +227,9 @@
 										<span class="ante-titulo text-uppercase">
 											<?php echo esc_html($tarjeta_2['antes_de_titulo_2']); ?>
 										</span>
-										<h2 class="titulo">
+										<h3 class="titulo">
 											<?php echo esc_html($tarjeta_2['titulo_2']); ?>
-										</h2>
+										</h3>
 										<span class="subtitulo">
 											<?php echo esc_html($tarjeta_2['subtitulo_2']); ?>
 										</span>
@@ -253,9 +254,9 @@
 										<span class="ante-titulo text-uppercase">
 											<?php echo esc_html($tarjeta_3['antes_de_titulo_3']); ?>
 										</span>
-										<h2 class="titulo">
+										<h3 class="titulo">
 											<?php echo esc_html($tarjeta_3['titulo_3']); ?>
-										</h2>
+										</h3>
 										<span class="subtitulo">
 											<?php echo esc_html($tarjeta_3['subtitulo_3']); ?>
 										</span>
