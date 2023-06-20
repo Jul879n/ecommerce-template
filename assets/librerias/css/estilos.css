@@ -133,7 +133,10 @@ a
   font-size: 14px;
   color: #333;
 }
-
+.circulo{
+  width: 20px !important;
+  height: 20px !important;
+}
 footer a
 {
   font-size: 14px;
