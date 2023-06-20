@@ -16,26 +16,26 @@
 	<div class="container ">
 		<div class="row pt-3">
 			<div class="col-12 col-sm-4 tarjeta-info position-relative">
-				<div class="m-5">
+				<div class="m-5 d-flex flex-column align-items-center">
 					<?php
 					$image = get_field('imagen_uno');
 					if (!empty($image)) : ?>
 						<img class="imagen" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 					<?php endif; ?>
-					<div>
+					<div class="text-center">
 						<h4><?php echo esc_html(get_field('titulo_uno')); ?></h4>
 						<p><?php echo esc_html(get_field('info_uno')); ?></p>
 					</div>
 				</div>
 			</div>
 			<div class="col-12 col-sm-4 tarjeta-info position-relative">
-				<div class="m-5">
+				<div class="m-5 d-flex flex-column align-items-center">
 				<?php
 					$image = get_field('imagen_dos');
 					if (!empty($image)) : ?>
 						<img class="imagen" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 					<?php endif; ?>
-					<div>
+					<div class="text-center">
 						<h4><?php echo esc_html(get_field('titulo_dos')); ?></h4>
 						<p><?php echo esc_html(get_field('info_uno')); ?></p>
 					</div>
@@ -43,13 +43,13 @@
 
 			</div>
 			<div class="col-12 col-sm-4 tarjeta-info position-relative">
-				<div class="m-5">
+				<div class="m-5 d-flex flex-column align-items-center">
 				<?php
 					$image = get_field('imagen_tres');
 					if (!empty($image)) : ?>
 						<img class="imagen" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 					<?php endif; ?>
-					<div>
+					<div class="text-center">
 						<h4><?php echo esc_html(get_field('titulo_tres')); ?></h4>
 						<p><?php echo esc_html(get_field('info_tres')); ?></p>
 					</div>
