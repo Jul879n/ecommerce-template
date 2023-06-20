@@ -17,20 +17,42 @@
 		<div class="row pt-3">
 			<div class="col-12 col-sm-4 tarjeta-info position-relative">
 				<div class="m-5">
-					<h4>dfdfdfdf</h4>
-					<p>Con Mercado Pago, paga con tus tarjetas de débito y crédito o hazlo con efectivo en puntos de pago. Paga siempre desde Mercado Libre para que podamos asegurar tu dinero.</p>
+					<?php
+					$image = get_field('imagen_uno');
+					if (!empty($image)) : ?>
+						<img class="" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+					<?php endif; ?>
+					<div>
+						<h4><?php echo esc_html(get_field('titulo_uno')); ?></h4>
+						<p><?php echo esc_html(get_field('info_uno')); ?></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-sm-4 tarjeta-info position-relative">
+				<div class="m-5">
+				<?php
+					$image = get_field('imagen_dos');
+					if (!empty($image)) : ?>
+						<img class="" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+					<?php endif; ?>
+					<div>
+						<h4><?php echo esc_html(get_field('titulo_dos')); ?></h4>
+						<p><?php echo esc_html(get_field('info_uno')); ?></p>
+					</div>
 				</div>
 
 			</div>
 			<div class="col-12 col-sm-4 tarjeta-info position-relative">
 				<div class="m-5">
-					<h4>dfdfdfdf</h4>
-				</div>
-
-			</div>
-			<div class="col-12 col-sm-4 tarjeta-info position-relative">
-				<div class="m-5">
-					<h4>dfdfdfdf</h4>
+				<?php
+					$image = get_field('imagen_tres');
+					if (!empty($image)) : ?>
+						<img class="" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+					<?php endif; ?>
+					<div>
+						<h4><?php echo esc_html(get_field('titulo_tres')); ?></h4>
+						<p><?php echo esc_html(get_field('info_tres')); ?></p>
+					</div>
 				</div>
 
 			</div>
