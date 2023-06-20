@@ -232,6 +232,10 @@ footer .responsivo li
   top: 50%;
   width: 1px;
 }
+.imagen{
+  height: 46px;
+  width: auto;
+}
 @media screen and (max-width: 768px)
 {
   .cart-collaterals

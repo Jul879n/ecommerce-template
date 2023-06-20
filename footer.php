@@ -20,7 +20,7 @@
 					<?php
 					$image = get_field('imagen_uno');
 					if (!empty($image)) : ?>
-						<img class="" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+						<img class="imagen" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 					<?php endif; ?>
 					<div>
 						<h4><?php echo esc_html(get_field('titulo_uno')); ?></h4>
@@ -33,7 +33,7 @@
 				<?php
 					$image = get_field('imagen_dos');
 					if (!empty($image)) : ?>
-						<img class="" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+						<img class="imagen" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 					<?php endif; ?>
 					<div>
 						<h4><?php echo esc_html(get_field('titulo_dos')); ?></h4>
@@ -47,7 +47,7 @@
 				<?php
 					$image = get_field('imagen_tres');
 					if (!empty($image)) : ?>
-						<img class="" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+						<img class="imagen" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 					<?php endif; ?>
 					<div>
 						<h4><?php echo esc_html(get_field('titulo_tres')); ?></h4>
