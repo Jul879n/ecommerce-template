@@ -25,10 +25,11 @@ jQuery(document).ready(function ($) {
   $(".products .product").addClass("card sombra");
   $(".products .product").find(".ajax_add_to_cart").remove();
   $(".sombra").mouseover(function () {
-    $(this).addClass("shadow");
+    $(this).addClass("shadow puntero");
   });
   $(".sombra").mouseout(function () {
     $(this).removeClass("shadow");
+    $(this).removeClass("puntero");
   });
   $("#menu-footer-final").addClass("m-0 p-0");
   $("footer li ").addClass("ms-0");
