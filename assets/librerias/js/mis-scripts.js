@@ -61,6 +61,6 @@ jQuery(document).ready(function ($) {
   $("#menu-derecha-nav li").eq(3).find("a").html('<i class="fa-solid fa-cart-shopping"></i>');
   $("#menu-izquierda-nav li a").addClass("d-flex align-items-center");
   $("#menu-izquierda-nav li").eq(0).find("a").html('<i class="fs-2 fa-solid fa-location-dot"></i><div class="ps-2">Ingresa tu <br> ubicacion</div>');
-  $(".columnas").addClass("d-flex align-items-end");
+  //$(".columnas").addClass("d-flex align-items-end");
   $('button[data-bs-target="#carouselExampleIndicators"]').addClass("circulo rounded-circle");
 });
