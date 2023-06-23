@@ -442,10 +442,10 @@
 			<!--te puede interesar-->
 			<!--colecciones-->
 			<div class="container-fluid">
-			<div class="d-flex align-items-end mt-3">
-				<h2 class="m-0 me-2">Las mejores tiendas te esperan</h2>
-				<a href="#">Ver tiendas</a>
-			</div>
+				<div class="d-flex align-items-end mt-3">
+					<h2 class="m-0 me-2">Las mejores tiendas te esperan</h2>
+					<a href="#">Ver tiendas</a>
+				</div>
 				<div class="row">
 					<div class="col-12 col-sm-4">
 						<div class="card sombra">
@@ -503,25 +503,86 @@
 			<!--colecciones-->
 			<!--categorias populares-->
 			<h2>Categorias populares</h2>
-			<div class="container-fluid">
-				<div class="row">
-					<div class="card col">xcxcxc</div>
-					<div class="card col">xcxcxc</div>
-					<div class="card col">xcxcxc</div>
-					<div class="card col">xcxcxc</div>
-					<div class="card col">xcxcxc</div>
-					<div class="card col">xcxcxc</div>
-					<div class="card col">xcxcxc</div>
+
+			<div id="carouselExample" class="carousel slide">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="container-fluid d-flex flex-column align-items-center">
+							<div class="row">
+								<div class="card cuadrado d-flex justify-content-center align-items-center rounded-0">xcxcxc</div>
+								<div class="card cuadrado d-flex justify-content-center align-items-center rounded-0">xcxcxc</div>
+								<div class="card cuadrado d-flex justify-content-center align-items-center rounded-0">xcxcxc</div>
+								<div class="card cuadrado d-flex justify-content-center align-items-center rounded-0">xcxcxc</div>
+								<div class="card cuadrado d-flex justify-content-center align-items-center rounded-0">xcxcxc</div>
+								<div class="card cuadrado d-flex justify-content-center align-items-center rounded-0">xcxcxc</div>
+								<div class="card cuadrado d-flex justify-content-center align-items-center rounded-0">xcxcxc</div>
+							</div>
+							<div class="row">
+								<div class="card cuadrado d-flex justify-content-center align-items-center rounded-0">xcxcxc</div>
+								<div class="card cuadrado d-flex justify-content-center align-items-center rounded-0">xcxcxc</div>
+								<div class="card cuadrado d-flex justify-content-center align-items-center rounded-0">xcxcxc</div>
+								<div class="card cuadrado d-flex justify-content-center align-items-center rounded-0">xcxcxc</div>
+								<div class="card cuadrado d-flex justify-content-center align-items-center rounded-0">xcxcxc</div>
+								<div class="card cuadrado d-flex justify-content-center align-items-center rounded-0">xcxcxc</div>
+								<div class="card cuadrado d-flex justify-content-center align-items-center rounded-0">xcxcxc</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="container-fluid d-flex flex-column align-items-center">
+							<div class="row">
+								<div class="card cuadrado d-flex justify-content-center align-items-center rounded-0">xcxcxc</div>
+								<div class="card cuadrado d-flex justify-content-center align-items-center rounded-0">xcxcxc</div>
+								<div class="card cuadrado d-flex justify-content-center align-items-center rounded-0">xcxcxc</div>
+								<div class="card cuadrado d-flex justify-content-center align-items-center rounded-0">xcxcxc</div>
+								<div class="card cuadrado d-flex justify-content-center align-items-center rounded-0">xcxcxc</div>
+								<div class="card cuadrado d-flex justify-content-center align-items-center rounded-0">xcxcxc</div>
+								<div class="card cuadrado d-flex justify-content-center align-items-center rounded-0">xcxcxc</div>
+							</div>
+							<div class="row">
+								<div class="card cuadrado d-flex justify-content-center align-items-center rounded-0">xcxcxc</div>
+								<div class="card cuadrado d-flex justify-content-center align-items-center rounded-0">xcxcxc</div>
+								<div class="card cuadrado d-flex justify-content-center align-items-center rounded-0">xcxcxc</div>
+								<div class="card cuadrado d-flex justify-content-center align-items-center rounded-0">xcxcxc</div>
+								<div class="card cuadrado d-flex justify-content-center align-items-center rounded-0">xcxcxc</div>
+								<div class="card cuadrado d-flex justify-content-center align-items-center rounded-0">xcxcxc</div>
+								<div class="card cuadrado d-flex justify-content-center align-items-center rounded-0">xcxcxc</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="container-fluid d-flex flex-column align-items-center">
+							<div class="row">
+								<div class="card cuadrado d-flex justify-content-center align-items-center rounded-0">xcxcxc</div>
+								<div class="card cuadrado d-flex justify-content-center align-items-center rounded-0">xcxcxc</div>
+								<div class="card cuadrado d-flex justify-content-center align-items-center rounded-0">xcxcxc</div>
+								<div class="card cuadrado d-flex justify-content-center align-items-center rounded-0">xcxcxc</div>
+								<div class="card cuadrado d-flex justify-content-center align-items-center rounded-0">xcxcxc</div>
+								<div class="card cuadrado d-flex justify-content-center align-items-center rounded-0">xcxcxc</div>
+								<div class="card cuadrado d-flex justify-content-center align-items-center rounded-0">xcxcxc</div>
+							</div>
+							<div class="row">
+								<div class="card cuadrado d-flex justify-content-center align-items-center rounded-0">xcxcxc</div>
+								<div class="card cuadrado d-flex justify-content-center align-items-center rounded-0">xcxcxc</div>
+								<div class="card cuadrado d-flex justify-content-center align-items-center rounded-0">xcxcxc</div>
+								<div class="card cuadrado d-flex justify-content-center align-items-center rounded-0">xcxcxc</div>
+								<div class="card cuadrado d-flex justify-content-center align-items-center rounded-0">xcxcxc</div>
+								<div class="card cuadrado d-flex justify-content-center align-items-center rounded-0">xcxcxc</div>
+								<div class="card cuadrado d-flex justify-content-center align-items-center rounded-0">xcxcxc</div>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="row">
-					<div class="card col">xcxcxc</div>
-					<div class="card col">xcxcxc</div>
-					<div class="card col">xcxcxc</div>
-					<div class="card col">xcxcxc</div>
-					<div class="card col">xcxcxc</div>
-					<div class="card col">xcxcxc</div>
-					<div class="card col">xcxcxc</div>
-				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+					<div class="border shadow bg-light esfera rounded-circle d-flex justify-content-center align-items-center">
+						<i class="fs-1 text-primary fa-solid fa-angle-left"></i>
+					</div>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+					<div class="border shadow bg-light esfera rounded-circle d-flex justify-content-center align-items-center">
+						<i class="fs-1 text-primary fa-solid fa-angle-right"></i>
+					</div>
+				</button>
 			</div>
 			<!--categorias populares-->
 		</div>
