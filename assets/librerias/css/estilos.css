@@ -283,6 +283,7 @@ footer .responsivo li
 .cuadrado{
   width: 170px;
   height: 170px;
+  cursor: pointer !important;
 }
 .esfera{
   width: 80px !important;
@@ -301,6 +302,9 @@ footer .responsivo li
 }
 .carousel-control-next:hover{
   opacity: 1 !important;
+}
+.fs-p{
+  font-size: 15px;
 }
 @media screen and (max-width: 768px)
 {

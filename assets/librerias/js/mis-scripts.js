@@ -65,9 +65,11 @@ jQuery(document).ready(function ($) {
   $('button[data-bs-target="#carouselExampleIndicators"]').addClass("circulo rounded-circle");
 
   $(".cuadrado").mouseover(function () {
+    $(this).removeClass("text-primary");
     $(this).addClass("bg-primary  text-white");
   });
   $(".cuadrado").mouseout(function () {
     $(this).removeClass("bg-primary text-white");
+    $(this).addClass("text-primary");
   });
 });
