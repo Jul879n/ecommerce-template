@@ -2,7 +2,7 @@ body
 {
   background-color: #ededed;
   list-style: none;
-  overflow-x: hidden !important;
+  
 }
 
 .boton-footer
@@ -328,12 +328,18 @@ footer .responsivo li
 #carrusel-productos{
   position: relative;
 }
-
+.oculto {
+  display: none;
+}
+#carrusel-productos {
+  width: 100%; /* asegura que el contenedor ocupe todo el ancho disponible */
+  overflow: hidden; /* oculta el contenido que se desborde del contenedor */
+}
 #carrusel-productos .slick-prev{
   position: absolute;
   z-index: 3;
   bottom: 50%;
-  left: -30px;
+  left: 0px;
   opacity: 0;
 }
 #carrusel-productos .slick-prev:hover{
@@ -343,7 +349,7 @@ footer .responsivo li
   position: absolute;
   z-index: 3;
   bottom: 50%;
-  right: -30px;
+  right: 0px;
   opacity: 0;
 }
 #carrusel-productos .slick-next:hover{
@@ -370,5 +376,13 @@ footer .responsivo li
   {
     position: relative;
     visibility: visible;
+  }
+  .slick-slide{
+    visibility: hidden !important;
+    position: absolute;
+  }
+  .slick-active{
+    visibility: visible !important;
+    position: relative;
   }
 }

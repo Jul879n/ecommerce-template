@@ -52,18 +52,32 @@ jQuery(document).ready(function ($) {
     $(this).find("i").toggleClass("fa-angle-down fa-angle-up");
   });
   $(".product .onsale").remove();
-  $(".menu-desplegable").attr('data-bs-toggle', 'tooltip');
-  $(".menu-desplegable").attr('data-bs-html', 'true');
-  $(".menu-desplegable").attr('data-bs-title', $(".sub-menu").detach().html());
+  $(".menu-desplegable").attr("data-bs-toggle", "tooltip");
+  $(".menu-desplegable").attr("data-bs-html", "true");
+  $(".menu-desplegable").attr("data-bs-title", $(".sub-menu").detach().html());
 
-  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-  const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+  const tooltipTriggerList = document.querySelectorAll(
+    '[data-bs-toggle="tooltip"]'
+  );
+  const tooltipList = [...tooltipTriggerList].map(
+    (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+  );
 
-  $("#menu-derecha-nav li").eq(3).find("a").html('<i class="fa-solid fa-cart-shopping"></i>');
+  $("#menu-derecha-nav li")
+    .eq(3)
+    .find("a")
+    .html('<i class="fa-solid fa-cart-shopping"></i>');
   $("#menu-izquierda-nav li a").addClass("d-flex align-items-center");
-  $("#menu-izquierda-nav li").eq(0).find("a").html('<i class="fs-2 fa-solid fa-location-dot"></i><div class="ps-2">Ingresa tu <br> ubicacion</div>');
+  $("#menu-izquierda-nav li")
+    .eq(0)
+    .find("a")
+    .html(
+      '<i class="fs-2 fa-solid fa-location-dot"></i><div class="ps-2">Ingresa tu <br> ubicacion</div>'
+    );
   //$(".columnas").addClass("d-flex align-items-end");
-  $('button[data-bs-target="#carouselExampleIndicators"]').addClass("circulo rounded-circle");
+  $('button[data-bs-target="#carouselExampleIndicators"]').addClass(
+    "circulo rounded-circle"
+  );
 
   $(".cuadrado").mouseover(function () {
     $(this).removeClass("text-primary");
@@ -73,40 +87,68 @@ jQuery(document).ready(function ($) {
     $(this).removeClass("bg-primary text-white");
     $(this).addClass("text-primary");
   });
+
   //carrusel productos
   $("#carrusel-productos").slick({
     slidesToShow: 5,
     slidesToScroll: 5,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 4000,
     arrows: true,
     dots: false,
     pauseOnHover: true,
     infinite: false,
-    
-    responsive: [{
-      breakpoint: 991,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },{
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },{
-      breakpoint: 375,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }]
+    edgeFriction: 1,
+    responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          autoplay: true,
+          autoplaySpeed: 4000,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          autoplay: true,
+          autoplaySpeed: 4000,
+        },
+      },
+      {
+        breakpoint: 375,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 4000,
+        },
+      },
+    ],
+  });
+  // Busca todos los elementos con el atributo aria-hidden
+  $("[aria-hidden]").each(function () {
+    // Si el valor de aria-hidden es "true", cambia el valor a "false", de lo contrario cambia el valor a "true"
+    if ($(this).attr("aria-hidden") === "true") {
+      $(this).attr("aria-hidden", "false");
+    } else {
+      $(this).attr("aria-hidden", "true");
+    }
   });
   $(".slick-track").addClass("d-flex");
-  $(".slick-next").html('<i class="fs-1 text-primary fa-solid fa-angle-right"></i>');
-  $(".slick-next").addClass("border shadow bg-light esfera rounded-circle d-flex justify-content-center align-items-center");
-  $(".slick-prev").html('<i class="fs-1 text-primary fa-solid fa-angle-left"></i>');
-  $(".slick-prev").addClass("border shadow bg-light esfera rounded-circle d-flex justify-content-center align-items-center");
+  $(".slick-next").html(
+    '<i class="fs-1 text-primary fa-solid fa-angle-right"></i>'
+  );
+  $(".slick-next").addClass(
+    "border shadow bg-light esfera rounded-circle d-flex justify-content-center align-items-center"
+  );
+  $(".slick-prev").html(
+    '<i class="fs-1 text-primary fa-solid fa-angle-left"></i>'
+  );
+  $(".slick-prev").addClass(
+    "border shadow bg-light esfera rounded-circle d-flex justify-content-center align-items-center"
+  );
 });
