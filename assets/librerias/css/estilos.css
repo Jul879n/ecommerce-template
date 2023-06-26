@@ -292,14 +292,14 @@ footer .responsivo li
 }
 .populares .carousel-control-prev{
   opacity: 0 !important;
-  left: -35px !important;
+  
 }
 .populares .carousel-control-prev:hover{
   opacity: 1 !important;
 }
 .populares .carousel-control-next{
   opacity: 0 !important;
-  right: -35px !important;
+  
 }
 .populares .carousel-control-next:hover{
   opacity: 1 !important;
