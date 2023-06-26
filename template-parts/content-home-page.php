@@ -544,7 +544,7 @@
 			<!--colecciones-->
 			<!--categorias populares-->
 			<h2>Categorias populares</h2>
-			<div id="carouselExample" class="carousel slide">
+			<div id="carouselExample" class="populares carousel slide">
 				<div class="carousel-inner">
 					<div class="carousel-item active">
 						<div class="container-fluid d-flex flex-column align-items-center">

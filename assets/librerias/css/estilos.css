@@ -2,7 +2,7 @@ body
 {
   background-color: #ededed;
   list-style: none;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 .boton-footer
@@ -290,18 +290,30 @@ footer .responsivo li
   width: 80px !important;
   height: 80px !important;
 }
-.carousel-control-prev{
+.populares .carousel-control-prev{
   opacity: 0 !important;
   left: -35px !important;
 }
-.carousel-control-prev:hover{
+.populares .carousel-control-prev:hover{
   opacity: 1 !important;
 }
-.carousel-control-next{
+.populares .carousel-control-next{
   opacity: 0 !important;
   right: -35px !important;
 }
-.carousel-control-next:hover{
+.populares .carousel-control-next:hover{
+  opacity: 1 !important;
+}
+#bannerSuperior .carousel-control-prev{
+  opacity: 0 !important;
+}
+#bannerSuperior .carousel-control-prev:hover{
+  opacity: 1 !important;
+}
+#bannerSuperior .carousel-control-next{
+  opacity: 0 !important;
+}
+#bannerSuperior .carousel-control-next:hover{
   opacity: 1 !important;
 }
 .fs-p{
