@@ -543,173 +543,176 @@
 			</div>
 			<!--colecciones-->
 			<!--categorias populares-->
-			<h2>Categorias populares</h2>
-			<div id="carouselExample" class="populares carousel slide">
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<div class="container-fluid d-flex flex-column align-items-center">
-							<div class="row">
-								<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
-									<i class="fa-solid fa-car"></i>
-									<span class="fs-p text-center">Autos, Motos y Otros</span>
+			<div class="col-12">
+				<h2>Categorias populares</h2>
+				<div id="carouselExample" class="populares carousel slide">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="container-fluid d-flex flex-column align-items-center">
+								<div class="row">
+									<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
+										<i class="fa-solid fa-car"></i>
+										<span class="fs-p text-center">Autos, Motos y Otros</span>
+									</div>
+									<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
+										<i class="fa-solid fa-camera"></i>
+										<span class="fs-p text-center">Cámaras y Accesorios</span>
+									</div>
+									<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
+										<i class="fa-solid fa-gamepad"></i>
+										<span class="fs-p text-center">Consolas y Videojuegos</span>
+									</div>
+									<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
+										<i class="fa-solid fa-fire-burner"></i>
+										<span class="fs-p text-center">Electrodomésticos</span>
+									</div>
+									<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
+										<i class="fa-solid fa-couch"></i>
+										<span class="fs-p text-center">Hogar y Muebles</span>
+									</div>
+									<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
+										<i class="fa-solid fa-shirt"></i>
+										<span class="fs-p text-center">Vestuario y Calzado</span>
+									</div>
+									<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
+										<i class="fa-solid fa-face-smile"></i>
+										<span class="fs-p text-center">Belleza y Cuidado Personal</span>
+									</div>
 								</div>
-								<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
-									<i class="fa-solid fa-camera"></i>
-									<span class="fs-p text-center">Cámaras y Accesorios</span>
-								</div>
-								<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
-									<i class="fa-solid fa-gamepad"></i>
-									<span class="fs-p text-center">Consolas y Videojuegos</span>
-								</div>
-								<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
-									<i class="fa-solid fa-fire-burner"></i>
-									<span class="fs-p text-center">Electrodomésticos</span>
-								</div>
-								<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
-									<i class="fa-solid fa-couch"></i>
-									<span class="fs-p text-center">Hogar y Muebles</span>
-								</div>
-								<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
-									<i class="fa-solid fa-shirt"></i>
-									<span class="fs-p text-center">Vestuario y Calzado</span>
-								</div>
-								<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
-									<i class="fa-solid fa-face-smile"></i>
-									<span class="fs-p text-center">Belleza y Cuidado Personal</span>
+								<div class="row">
+									<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
+										<i class="fa-solid fa-mobile"></i>
+										<span class="fs-p text-center">Celulares y Telefonía</span>
+									</div>
+									<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
+										<i class="fa-solid fa-laptop"></i>
+										<span class="fs-p text-center">Computación</span>
+									</div>
+									<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
+										<i class="fa-solid fa-microphone-lines"></i>
+										<span class="fs-p text-center">Electrónica, Audio y Video</span>
+									</div>
+									<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
+										<i class="fa-solid fa-car-battery"></i>
+										<span class="fs-p text-center">Accesorios para Vehículos</span>
+									</div>
+									<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
+										<i class="fa-solid fa-volleyball"></i>
+										<span class="fs-p text-center">Deportes y Fitness</span>
+									</div>
+									<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
+										<i class="fa-solid fa-chess"></i>
+										<span class="fs-p text-center">Juegos y Juguetes</span>
+									</div>
+									<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
+										<i class="fa-solid fa-baby-carriage"></i>
+										<span class="fs-p text-center">Bebés</span>
+									</div>
 								</div>
 							</div>
-							<div class="row">
-								<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
-									<i class="fa-solid fa-mobile"></i>
-									<span class="fs-p text-center">Celulares y Telefonía</span>
+						</div>
+						<div class="carousel-item">
+							<div class="container-fluid d-flex flex-column align-items-center">
+								<div class="row">
+									<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
+										<i class="fa-solid fa-paw"></i>
+										<span class="fs-p text-center">Animales y Mascotas</span>
+									</div>
+									<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
+										<i class="fa-solid fa-palette"></i>
+										<span class="fs-p text-center">Arte, Librería y Cordonería</span>
+									</div>
+									<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
+										<i class="fa-solid fa-screwdriver-wrench"></i>
+										<span class="fs-p text-center">Herramientas</span>
+									</div>
+									<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
+										<i class="fa-solid fa-building"></i>
+										<span class="fs-p text-center">Inmuebles</span>
+									</div>
+									<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
+										<i class="fa-solid fa-book-open"></i>
+										<span class="fs-p text-center">Libros, Revistas y Comics</span>
+									</div>
+									<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
+										<i class="fa-regular fa-gem"></i>
+										<span class="fs-p text-center">Relojes y Joyas</span>
+									</div>
+									<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
+										<i class="fa-solid fa-tractor"></i>
+										<span class="fs-p text-center">Agro</span>
+									</div>
 								</div>
-								<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
-									<i class="fa-solid fa-laptop"></i>
-									<span class="fs-p text-center">Computación</span>
+								<div class="row">
+									<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
+										<i class="fa-solid fa-hourglass-half"></i>
+										<span class="fs-p text-center">Antigüedades y Colecciones</span>
+									</div>
+									<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
+										<i class="fa-solid fa-ticket"></i>
+										<span class="fs-p text-center">Entradas para Eventos</span>
+									</div>
+									<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
+										<i class="fa-solid fa-print"></i>
+										<span class="fs-p text-center">Industrias y Oficinas</span>
+									</div>
+									<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
+										<i class="fa-solid fa-guitar"></i>
+										<span class="fs-p text-center">Instrumentos Musicales</span>
+									</div>
+									<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
+										<i class="fa-solid fa-music"></i>
+										<span class="fs-p text-center">Música y Películas</span>
+									</div>
+									<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
+										<i class="fa-solid fa-people-group"></i>
+										<span class="fs-p text-center">Servicios</span>
+									</div>
+									<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
+										<i class="fa-solid fa-utensils"></i>
+										<span class="fs-p text-center">Alimentos y Bebidas</span>
+									</div>
 								</div>
-								<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
-									<i class="fa-solid fa-microphone-lines"></i>
-									<span class="fs-p text-center">Electrónica, Audio y Video</span>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="container-fluid d-flex flex-column align-items-center">
+								<div class="row">
+									<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
+										<i class="fa-solid fa-helmet-safety"></i>
+										<span class="fs-p text-center">Construcción</span>
+									</div>
+									<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
+										<i class="fa-solid fa-house-medical"></i>
+										<span class="fs-p text-center">Salud y Equipamiento Médico</span>
+									</div>
 								</div>
-								<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
-									<i class="fa-solid fa-car-battery"></i>
-									<span class="fs-p text-center">Accesorios para Vehículos</span>
-								</div>
-								<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
-									<i class="fa-solid fa-volleyball"></i>
-									<span class="fs-p text-center">Deportes y Fitness</span>
-								</div>
-								<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
-									<i class="fa-solid fa-chess"></i>
-									<span class="fs-p text-center">Juegos y Juguetes</span>
-								</div>
-								<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
-									<i class="fa-solid fa-baby-carriage"></i>
-									<span class="fs-p text-center">Bebés</span>
+								<div class="row">
+									<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
+										<i class="fa-solid fa-cake-candles"></i>
+										<span class="fs-p text-center">Souvenirs, Cotillón y Fiestas</span>
+									</div>
+									<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
+										<i class="fa-solid fa-table-cells-large"></i>
+										<span class="fs-p text-center">Otras Categorías</span>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="carousel-item">
-						<div class="container-fluid d-flex flex-column align-items-center">
-							<div class="row">
-								<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
-									<i class="fa-solid fa-paw"></i>
-									<span class="fs-p text-center">Animales y Mascotas</span>
-								</div>
-								<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
-									<i class="fa-solid fa-palette"></i>
-									<span class="fs-p text-center">Arte, Librería y Cordonería</span>
-								</div>
-								<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
-									<i class="fa-solid fa-screwdriver-wrench"></i>
-									<span class="fs-p text-center">Herramientas</span>
-								</div>
-								<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
-									<i class="fa-solid fa-building"></i>
-									<span class="fs-p text-center">Inmuebles</span>
-								</div>
-								<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
-									<i class="fa-solid fa-book-open"></i>
-									<span class="fs-p text-center">Libros, Revistas y Comics</span>
-								</div>
-								<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
-									<i class="fa-regular fa-gem"></i>
-									<span class="fs-p text-center">Relojes y Joyas</span>
-								</div>
-								<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
-									<i class="fa-solid fa-tractor"></i>
-									<span class="fs-p text-center">Agro</span>
-								</div>
-							</div>
-							<div class="row">
-								<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
-									<i class="fa-solid fa-hourglass-half"></i>
-									<span class="fs-p text-center">Antigüedades y Colecciones</span>
-								</div>
-								<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
-									<i class="fa-solid fa-ticket"></i>
-									<span class="fs-p text-center">Entradas para Eventos</span>
-								</div>
-								<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
-									<i class="fa-solid fa-print"></i>
-									<span class="fs-p text-center">Industrias y Oficinas</span>
-								</div>
-								<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
-									<i class="fa-solid fa-guitar"></i>
-									<span class="fs-p text-center">Instrumentos Musicales</span>
-								</div>
-								<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
-									<i class="fa-solid fa-music"></i>
-									<span class="fs-p text-center">Música y Películas</span>
-								</div>
-								<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
-									<i class="fa-solid fa-people-group"></i>
-									<span class="fs-p text-center">Servicios</span>
-								</div>
-								<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
-									<i class="fa-solid fa-utensils"></i>
-									<span class="fs-p text-center">Alimentos y Bebidas</span>
-								</div>
-							</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+						<div class="border shadow bg-light esfera rounded-circle d-flex justify-content-center align-items-center">
+							<i class="fs-1 text-primary fa-solid fa-angle-left"></i>
 						</div>
-					</div>
-					<div class="carousel-item">
-						<div class="container-fluid d-flex flex-column align-items-center">
-							<div class="row">
-								<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
-									<i class="fa-solid fa-helmet-safety"></i>
-									<span class="fs-p text-center">Construcción</span>
-								</div>
-								<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
-									<i class="fa-solid fa-house-medical"></i>
-									<span class="fs-p text-center">Salud y Equipamiento Médico</span>
-								</div>
-							</div>
-							<div class="row">
-								<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
-									<i class="fa-solid fa-cake-candles"></i>
-									<span class="fs-p text-center">Souvenirs, Cotillón y Fiestas</span>
-								</div>
-								<div class="card cuadrado text-primary d-flex justify-content-center align-items-center rounded-0">
-									<i class="fa-solid fa-table-cells-large"></i>
-									<span class="fs-p text-center">Otras Categorías</span>
-								</div>
-							</div>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+						<div class="border shadow bg-light esfera rounded-circle d-flex justify-content-center align-items-center">
+							<i class="fs-1 text-primary fa-solid fa-angle-right"></i>
 						</div>
-					</div>
+					</button>
 				</div>
-				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-					<div class="border shadow bg-light esfera rounded-circle d-flex justify-content-center align-items-center">
-						<i class="fs-1 text-primary fa-solid fa-angle-left"></i>
-					</div>
-				</button>
-				<button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-					<div class="border shadow bg-light esfera rounded-circle d-flex justify-content-center align-items-center">
-						<i class="fs-1 text-primary fa-solid fa-angle-right"></i>
-					</div>
-				</button>
 			</div>
+
 			<!--categorias populares-->
 		</div>
 	</div>

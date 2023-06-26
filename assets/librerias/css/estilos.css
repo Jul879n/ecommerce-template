@@ -377,12 +377,7 @@ footer .responsivo li
     position: relative;
     visibility: visible;
   }
-  .slick-slide{
-    visibility: hidden !important;
-    position: absolute;
-  }
-  .slick-active{
-    visibility: visible !important;
-    position: relative;
+  #carrusel-productos .slick-slide {
+    width: calc(100% / 2); /* ajusta el ancho de cada slide al 50% del ancho de la pantalla */
   }
 }
