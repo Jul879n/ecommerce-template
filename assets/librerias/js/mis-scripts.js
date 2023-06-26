@@ -23,6 +23,7 @@ jQuery(document).ready(function ($) {
     .eq(0)
     .addClass("border-start ps-2 border-primary");
   $(".products .product").addClass("card sombra");
+  $(".attachment-woocommerce_thumbnail").addClass("card-img");
   $(".products .product").find(".ajax_add_to_cart").remove();
   $(".sombra").mouseover(function () {
     $(this).addClass("shadow puntero");
