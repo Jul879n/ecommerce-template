@@ -15,7 +15,6 @@
 		<div class="spinner-border text-warning" role="status"><span class="visually-hidden">Loading...</span></div>
 	</div>
 	<!--banner superior-->
-
 	<div id="bannerSuperior" class="carousel slide">
 		<div class="carousel-indicators">
 			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -70,12 +69,14 @@
 			</div>
 		</div>
 		<button class="carousel-control-prev" type="button" data-bs-target="#bannerSuperior" data-bs-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Previous</span>
+			<div class="border shadow bg-light esfera rounded-circle d-flex justify-content-center align-items-center">
+				<i class="fs-1 text-primary fa-solid fa-angle-left"></i>
+			</div>
 		</button>
 		<button class="carousel-control-next" type="button" data-bs-target="#bannerSuperior" data-bs-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Next</span>
+			<div class="border shadow bg-light esfera rounded-circle d-flex justify-content-center align-items-center">
+				<i class="fs-1 text-primary fa-solid fa-angle-right"></i>
+			</div>
 		</button>
 	</div>
 	<!--banner superior-->
@@ -87,13 +88,13 @@
 					<div class="card-body">
 						<div class="container-fluid">
 							<div class="row">
-								<div class="col-3">
+								<div class="col-12 col-sm-3">
 									<div class="raya d-flex flex-column">
 										<span><?php echo esc_html(get_field('cuadro_1')); ?></span>
 										<span>con Mercado Pago</span>
 									</div>
 								</div>
-								<div class="col-3 d-flex">
+								<div class="col-12 col-sm-3 d-flex">
 									<?php
 									$image = get_field('cuadro_2_imagen');
 									if (!empty($image)) : ?>
@@ -104,7 +105,7 @@
 										<a href="#">Ver más</a>
 									</div>
 								</div>
-								<div class="col-3 d-flex">
+								<div class="col-12 col-sm-3 d-flex">
 
 									<?php
 									$image = get_field('cuadro_3_imagen');
@@ -116,7 +117,7 @@
 										<a href="#">Ver más</a>
 									</div>
 								</div>
-								<div class="col-3 d-flex">
+								<div class="col-12 col-sm-3 d-flex">
 
 									<?php
 									$image = get_field('cuadro_4_imagen');

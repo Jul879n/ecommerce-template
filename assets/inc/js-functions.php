@@ -11,12 +11,15 @@ function js_script()
         // Register the script like this for a theme:
 
     wp_register_script('bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js', true);
+    wp_register_script('slick', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js', true);
     wp_register_script('mi-js', get_bloginfo('template_directory') . '/assets/librerias/js/mis-scripts.js', array('jquery'), '1', true);  
         
         /*encolamos los JS*/
         //wp_enqueue_script('titan-js', array('jquery'), true);
         wp_enqueue_script('bootstrap-js');
+        
         wp_enqueue_script('mi-js', array('jquery'), true);
+        wp_enqueue_script('slick');
         
 
     }

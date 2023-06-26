@@ -72,4 +72,40 @@ jQuery(document).ready(function ($) {
     $(this).removeClass("bg-primary text-white");
     $(this).addClass("text-primary");
   });
+  //carrusel productos
+  $("#carrusel-productos").slick({
+    slidesToShow: 5,
+    slidesToScroll: 5,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    arrows: true,
+    dots: false,
+    pauseOnHover: true,
+    infinite: false,
+    
+    responsive: [{
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },{
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },{
+      breakpoint: 375,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }]
+  });
+  $(".slick-track").addClass("d-flex");
+  $(".slick-next").html('<i class="fs-1 text-primary fa-solid fa-angle-right"></i>');
+  $(".slick-next").addClass("border shadow bg-light esfera rounded-circle d-flex justify-content-center align-items-center");
+  $(".slick-prev").html('<i class="fs-1 text-primary fa-solid fa-angle-left"></i>');
+  $(".slick-prev").addClass("border shadow bg-light esfera rounded-circle d-flex justify-content-center align-items-center");
 });

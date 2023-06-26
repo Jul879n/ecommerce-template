@@ -9,9 +9,11 @@
     }
     incrustar_hoja_estilos_ecommerce();
 </script>
+<div id="carrusel-productos">
+
 <?php
-$args = array(
-    'posts_per_page' => 8,
+$args = array( 
+    'posts_per_page' => 85,
     // Número máximo de publicaciones a mostrar
     'post_type' => 'product',
     // Tipo de publicación a consultar
@@ -32,8 +34,6 @@ $args = array(
 );
 $featured_product = new WP_Query($args); // Realizar la consulta de publicaciones
 if ($featured_product->have_posts()) { // Comprobar si hay publicaciones encontradas
-    echo '<div class="container-fluid">';
-    echo '<div class="row">';
     while ($featured_product->have_posts()):
         $featured_product->the_post();
         // Inicio del bucle para mostrar cada publicación encontrada
@@ -49,11 +49,9 @@ if ($featured_product->have_posts()) { // Comprobar si hay publicaciones encontr
                 </div>
         <?php
     endwhile; // Fin del bucle para mostrar cada publicación
-    echo '</div>';
-    echo '</div>';
 } else {
     echo __('Lo sentimos no hay productos'); // Mostrar mensaje si no se encuentran productos
 }
 wp_reset_postdata(); // Restablecer los datos de la consulta original
 ?>
-
+</div>

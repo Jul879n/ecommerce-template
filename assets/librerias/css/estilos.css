@@ -2,6 +2,7 @@ body
 {
   background-color: #ededed;
   list-style: none;
+  overflow-x: hidden;
 }
 
 .boton-footer
@@ -305,6 +306,36 @@ footer .responsivo li
 }
 .fs-p{
   font-size: 15px;
+}
+.slick-slide{
+  visibility: hidden !important;
+}
+.slick-active{
+  visibility: visible !important;
+}
+#carrusel-productos{
+  position: relative;
+}
+
+#carrusel-productos .slick-prev{
+  position: absolute;
+  z-index: 3;
+  bottom: 50%;
+  left: -30px;
+  opacity: 0;
+}
+#carrusel-productos .slick-prev:hover{
+  opacity: 1;
+}
+#carrusel-productos .slick-next{
+  position: absolute;
+  z-index: 3;
+  bottom: 50%;
+  right: -30px;
+  opacity: 0;
+}
+#carrusel-productos .slick-next:hover{
+  opacity: 1;
 }
 @media screen and (max-width: 768px)
 {
