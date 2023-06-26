@@ -339,6 +339,9 @@ footer .responsivo li
 }
 @media screen and (max-width: 768px)
 {
+  body{
+    overflow-x: hidden !important;
+  }
   .cart-collaterals
   {
     width: 100% !important;
