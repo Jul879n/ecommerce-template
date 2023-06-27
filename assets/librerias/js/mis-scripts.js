@@ -170,7 +170,11 @@ jQuery(document).ready(function ($) {
   $(".related").attr("id", "relacionados");
   // Selecciona el elemento donde deseas insertar la sección #relacionados
 var $targetElement = $(".type-product:first");
-
 // Mueve el elemento #relacionados a la posición deseada, si ya existe en el DOM
 $("#relacionados").detach().insertAfter($targetElement);
+$('#comments').appendTo('.woocommerce-tabs');
+$("#commentform label").addClass("form-label");
+$("#commentform input").addClass("form-control");
+$("#commentform textarea").addClass("form-control");
+$("#wp-comment-cookies-consent").removeClass("form-control");
 });
