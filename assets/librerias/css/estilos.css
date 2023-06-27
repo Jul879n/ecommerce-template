@@ -355,6 +355,25 @@ footer .responsivo li
 #carrusel-productos .slick-next:hover{
   opacity: 1;
 }
+
+.productos{
+  height: 70px;
+  width: 70px;
+}
+.tiendas .card{
+  height: 340px;
+}
+.tiendas .miniatura{
+  height: 80px;
+  width: 80px;
+}
+.tiendas .fondo{
+  top: 0;
+  z-index: 0;
+}
+.tiendas .uno{
+  z-index: 1;
+}
 @media screen and (max-width: 768px)
 {
   body{

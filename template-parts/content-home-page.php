@@ -371,24 +371,136 @@
 				<h2 class="m-0 me-2">Las mejores tiendas te esperan</h2>
 				<a href="#">Ver tiendas</a>
 			</div>
-			<div class="col-12 col-sm-3">
-				<div class="card">
-					<div class="card-body">GHGH</div>
+			<div class="tiendas col-12 col-sm-3">
+				<div class="card sombra d-flex flex-column align-items-center justify-content-around position-relative">
+					<?php
+					$image = get_field('fondo_tienda_1');
+					if (!empty($image)) : ?>
+						<img class="rounded-top fondo position-absolute" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+					<?php endif; ?>
+					<?php
+					$image = get_field('miniatura_tienda_1');
+					if (!empty($image)) : ?>
+						<img class="miniatura shadow border rounded-2 mt-5 uno" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+					<?php endif; ?>
+					<h3 class="uno"><?php echo esc_html(get_field('nombre_tienda_1')); ?></h3>
+					<div class="d-flex uno">
+						<?php
+						$image = get_field('tienda_1_producto_1');
+						if (!empty($image)) : ?>
+							<img class="productos border rounded-2" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+						<?php endif; ?>
+						<?php
+						$image = get_field('tienda_1_producto_2');
+						if (!empty($image)) : ?>
+							<img class="productos border rounded-2 ms-2 me-2" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+						<?php endif; ?>
+						<?php
+						$image = get_field('tienda_1_producto_3');
+						if (!empty($image)) : ?>
+							<img class="productos border rounded-2" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+						<?php endif; ?>
+					</div>
+					<a href="#">Ver tienda</a>
 				</div>
 			</div>
-			<div class="col-12 col-sm-3">
-				<div class="card">
-					<div class="card-body">GHGH</div>
+			<div class="tiendas col-12 col-sm-3">
+				<div class="card sombra d-flex flex-column align-items-center justify-content-around position-relative">
+					<?php
+					$image = get_field('fondo_tienda_2');
+					if (!empty($image)) : ?>
+						<img class="rounded-top fondo position-absolute" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+					<?php endif; ?>
+					<?php
+					$image = get_field('miniatura_tienda_2');
+					if (!empty($image)) : ?>
+						<img class="miniatura shadow border rounded-2 mt-5 uno" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+					<?php endif; ?>
+					<h3 class="uno"><?php echo esc_html(get_field('nombre_tienda_2')); ?></h3>
+					<div class="d-flex uno">
+						<?php
+						$image = get_field('tienda_2_producto_1');
+						if (!empty($image)) : ?>
+							<img class="productos border rounded-2" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+						<?php endif; ?>
+						<?php
+						$image = get_field('tienda_2_producto_2');
+						if (!empty($image)) : ?>
+							<img class="productos border rounded-2 ms-2 me-2" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+						<?php endif; ?>
+						<?php
+						$image = get_field('tienda_2_producto_3');
+						if (!empty($image)) : ?>
+							<img class="productos border rounded-2" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+						<?php endif; ?>
+					</div>
+					<a href="#">Ver tienda</a>
 				</div>
 			</div>
-			<div class="col-12 col-sm-3">
-				<div class="card">
-					<div class="card-body">GHGH</div>
+			<div class="tiendas col-12 col-sm-3">
+				<div class="card sombra d-flex flex-column align-items-center justify-content-around position-relative">
+					<?php
+					$image = get_field('fondo_tienda_3');
+					if (!empty($image)) : ?>
+						<img class="rounded-top fondo position-absolute" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+					<?php endif; ?>
+					<?php
+					$image = get_field('miniatura_tienda_3');
+					if (!empty($image)) : ?>
+						<img class="miniatura shadow border rounded-2 mt-5 uno" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+					<?php endif; ?>
+					<h3 class="uno"><?php echo esc_html(get_field('nombre_tienda_3')); ?></h3>
+					<div class="d-flex uno">
+						<?php
+						$image = get_field('tienda_3_producto_1');
+						if (!empty($image)) : ?>
+							<img class="productos border rounded-2" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+						<?php endif; ?>
+						<?php
+						$image = get_field('tienda_3_producto_2');
+						if (!empty($image)) : ?>
+							<img class="productos border rounded-2 ms-2 me-2" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+						<?php endif; ?>
+						<?php
+						$image = get_field('tienda_3_producto_3');
+						if (!empty($image)) : ?>
+							<img class="productos border rounded-2" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+						<?php endif; ?>
+					</div>
+					<a href="#">Ver tienda</a>
 				</div>
 			</div>
-			<div class="col-12 col-sm-3">
-				<div class="card">
-					<div class="card-body">GHGH</div>
+			<div class="tiendas col-12 col-sm-3">
+				<div class="card sombra d-flex flex-column align-items-center justify-content-around position-relative">
+					<?php
+					$image = get_field('fondo_tienda_4');
+					if (!empty($image)) : ?>
+						<img class="rounded-top fondo position-absolute" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+					<?php endif; ?>
+					<?php
+					$image = get_field('miniatura_tienda_4');
+					if (!empty($image)) : ?>
+						<img class="miniatura shadow border rounded-2 mt-5 uno" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+					<?php endif; ?>
+					<h3 class="uno"><?php echo esc_html(get_field('nombre_tienda_4')); ?></h3>
+					<div class="d-flex uno">
+						<?php
+						$image = get_field('tienda_4_producto_1');
+						if (!empty($image)) : ?>
+							<img class="productos border rounded-2" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+						<?php endif; ?>
+						<?php
+						$image = get_field('tienda_4_producto_2');
+						if (!empty($image)) : ?>
+							<img class="productos border rounded-2 ms-2 me-2" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+						<?php endif; ?>
+						<?php
+						$image = get_field('tienda_4_producto_3');
+						if (!empty($image)) : ?>
+							<img class="productos border rounded-2" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+						<?php endif; ?>
+					</div>
+					<a href="#">Ver tienda</a>
 				</div>
 			</div>
 			<!--tiendas-->
