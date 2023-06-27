@@ -488,6 +488,10 @@ ol li .flex-active
   border: 1px solid #dc3545; /* Establece un borde rojo */
   border-radius: 0.25rem; /* Establece un borde redondeado */
 }
+.woocommerce-message{
+  border: 1px solid #3483fa;
+  border-radius: 0.25rem; /* Establece un borde redondeado */
+}
 .flex-viewport
 {
   width: 600px;
