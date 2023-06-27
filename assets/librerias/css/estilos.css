@@ -341,33 +341,9 @@ footer .responsivo li
 {
   font-size: 15px;
 }
-
-.slick-slide
-{
-  visibility: hidden !important;
-}
-
-.slick-active
-{
-  visibility: visible !important;
-}
-
-#carrusel-productos
-{
-  position: relative;
-}
-
 .oculto
 {
   display: none;
-}
-
-#carrusel-productos
-{
-  width: 100%;
-  /* asegura que el contenedor ocupe todo el ancho disponible */
-  overflow: hidden;
-  /* oculta el contenido que se desborde del contenedor */
 }
 
 #carrusel-productos .slick-prev
@@ -375,7 +351,7 @@ footer .responsivo li
   position: absolute;
   z-index: 3;
   bottom: 50%;
-  left: 0px;
+  left: -40px;
   opacity: 0;
 }
 
@@ -389,7 +365,7 @@ footer .responsivo li
   position: absolute;
   z-index: 3;
   bottom: 50%;
-  right: 0px;
+  right: -40px;
   opacity: 0;
 }
 
@@ -408,7 +384,12 @@ footer .responsivo li
 {
   height: 340px;
 }
-
+.slick-next:before {
+  content: '';
+}
+.slick-prev:before {
+  content: '';
+}
 .tiendas .miniatura
 {
   height: 80px;
