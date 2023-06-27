@@ -325,18 +325,17 @@
 						<div class="row">
 							<div class="col-6 col-sm-6 d-flex justify-content-center align-items-center">
 								<div class="card-body">
-									<span class="card-text text-uppercase"><?php echo esc_html(get_field('subtitulo_del_dia')); ?></span>
-									<h2 class="card-title text-uppercase"><?php echo esc_html(get_field('titulo_del_dia')); ?></h2>
-									<a class="btn btn-primary" href="#">Ver más</a>
+									<span class="card-text text-uppercase"><?php echo esc_html(get_field('subtitulo_descubre_1')); ?></span>
+									<h2 class="card-title text-uppercase"><?php echo esc_html(get_field('titulo_descubre_1')); ?></h2>
+									<a class="btn btn-primary rounded-0" href="#">Ver más</a>
 								</div>
 							</div>
 							<div class="col-6 col-sm-6 p-0">
-								<?php
-								$image = get_field('imagen_del_dia');
+							<?php
+								$image = get_field('img_descubre_1');
 								if (!empty($image)) : ?>
-									<img class="img-fluid rounded-end" src="https://http2.mlstatic.com/D_NQ_665317-MLA70001271887_062023-C.webp" />
+									<img class="img-fluid rounded-end" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 								<?php endif; ?>
-
 							</div>
 						</div>
 					</div>
@@ -348,18 +347,17 @@
 						<div class="row">
 							<div class="col-6 col-sm-6 d-flex justify-content-center align-items-center">
 								<div class="card-body">
-									<span class="card-text text-uppercase"><?php echo esc_html(get_field('subtitulo_del_dia')); ?></span>
-									<h2 class="card-title text-uppercase"><?php echo esc_html(get_field('titulo_del_dia')); ?></h2>
-									<a class="btn btn-primary" href="#">Ver más</a>
+									<span class="card-text text-uppercase"><?php echo esc_html(get_field('subtitulo_descubre_2')); ?></span>
+									<h2 class="card-title text-uppercase"><?php echo esc_html(get_field('titulo_descubre_2')); ?></h2>
+									<a class="btn btn-primary rounded-0" href="#">Ver más</a>
 								</div>
 							</div>
 							<div class="col-6 col-sm-6 p-0">
 								<?php
-								$image = get_field('imagen_del_dia');
+								$image = get_field('img_descubre_2');
 								if (!empty($image)) : ?>
-									<img class="img-fluid rounded-end" src="https://http2.mlstatic.com/D_NQ_817013-MLA69982326912_062023-C.webp" />
+									<img class="img-fluid rounded-end" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 								<?php endif; ?>
-
 							</div>
 						</div>
 					</div>
