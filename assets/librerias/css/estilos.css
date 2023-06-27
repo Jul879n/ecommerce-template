@@ -288,7 +288,11 @@ footer .responsivo li
   height: 170px;
   cursor: pointer !important;
 }
-
+.cuadrado-2
+{
+  height: 170px;
+  cursor: pointer !important;
+}
 .esfera
 {
   width: 80px !important;
@@ -497,9 +501,18 @@ ol li .flex-active
 {
   justify-content: start;
 }
-
+.no-ocultar{
+  display: none;
+}
 @media screen and (max-width: 768px)
 {
+  .ocultar
+  {
+    display: none;
+  }
+  .no-ocultar{
+    display: block;
+  }
   .pegado{
     position: relative;
     top: auto;

@@ -331,7 +331,7 @@
 								</div>
 							</div>
 							<div class="col-6 col-sm-6 p-0">
-							<?php
+								<?php
 								$image = get_field('img_descubre_1');
 								if (!empty($image)) : ?>
 									<img class="img-fluid rounded-end" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
@@ -653,7 +653,7 @@
 			</div>
 			<!--colecciones-->
 			<!--categorias populares-->
-			<div class="col-12">
+			<div class="col-12 ocultar">
 				<h2>Categorias populares</h2>
 				<div id="carouselExample" class="populares carousel slide">
 					<div class="carousel-inner">
@@ -822,7 +822,50 @@
 					</button>
 				</div>
 			</div>
-
+			<div class="col-12 no-ocultar container-fluid">
+				<h2>Categorias populares</h2>
+				<div class="row">
+					<div class="col-6 mb-3">
+						<div class="card cuadrado-2 text-primary d-flex justify-content-center align-items-center rounded-0">
+							<i class="fa-solid fa-mobile"></i>
+							<span class="fs-p text-center">Celulares y Telefonía</span>
+						</div>
+					</div>
+					<div class="col-6 mb-3">
+						<div class="card  cuadrado-2 text-primary d-flex justify-content-center align-items-center rounded-0">
+							<i class="fa-solid fa-gamepad"></i>
+							<span class="fs-p text-center">Consolas y Videojuegos</span>
+						</div>
+					</div>
+					<div class="col-6 mb-3">
+						<div class="card  cuadrado-2 text-primary d-flex justify-content-center align-items-center rounded-0">
+							<i class="fa-solid fa-microphone-lines"></i>
+							<span class="fs-p text-center">Electrónica, Audio y Video</span>
+						</div>
+					</div>
+					<div class="col-6 mb-3">
+						<div class="card cuadrado-2 text-primary d-flex justify-content-center align-items-center rounded-0">
+							<i class="fa-solid fa-couch"></i>
+							<span class="fs-p text-center">Hogar y Muebles</span>
+						</div>
+					</div>
+					<div class="col-6 mb-3">
+						<div class="card  cuadrado-2 text-primary d-flex justify-content-center align-items-center rounded-0">
+							<i class="fa-solid fa-volleyball"></i>
+							<span class="fs-p text-center">Deportes y Fitness</span>
+						</div>
+					</div>
+					<div class="col-6 mb-3">
+						<div class="card  cuadrado-2 text-primary d-flex justify-content-center align-items-center rounded-0">
+							<i class="fa-solid fa-car-battery"></i>
+							<span class="fs-p text-center">Accesorios para Vehículos</span>
+						</div>
+					</div>
+					<div class="col-12">
+						<a href="#" class="w-100 btn btn-light text-primary">Ver más categorías</a>
+					</div>
+				</div>
+			</div>
 			<!--categorias populares-->
 		</div>
 	</div>
