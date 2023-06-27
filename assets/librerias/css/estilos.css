@@ -2,7 +2,7 @@ body
 {
   background-color: #ededed;
   list-style: none;
-  
+
 }
 
 .boton-footer
@@ -281,104 +281,230 @@ footer .responsivo li
 {
   cursor: pointer;
 }
-.cuadrado{
+
+.cuadrado
+{
   width: 170px;
   height: 170px;
   cursor: pointer !important;
 }
-.esfera{
+
+.esfera
+{
   width: 80px !important;
   height: 80px !important;
 }
-.populares .carousel-control-prev{
+
+.populares .carousel-control-prev
+{
   opacity: 0 !important;
-  
+
 }
-.populares .carousel-control-prev:hover{
+
+.populares .carousel-control-prev:hover
+{
   opacity: 1 !important;
 }
-.populares .carousel-control-next{
+
+.populares .carousel-control-next
+{
   opacity: 0 !important;
-  
+
 }
-.populares .carousel-control-next:hover{
+
+.populares .carousel-control-next:hover
+{
   opacity: 1 !important;
 }
-#bannerSuperior .carousel-control-prev{
+
+#bannerSuperior .carousel-control-prev
+{
   opacity: 0 !important;
 }
-#bannerSuperior .carousel-control-prev:hover{
+
+#bannerSuperior .carousel-control-prev:hover
+{
   opacity: 1 !important;
 }
-#bannerSuperior .carousel-control-next{
+
+#bannerSuperior .carousel-control-next
+{
   opacity: 0 !important;
 }
-#bannerSuperior .carousel-control-next:hover{
+
+#bannerSuperior .carousel-control-next:hover
+{
   opacity: 1 !important;
 }
-.fs-p{
+
+.fs-p
+{
   font-size: 15px;
 }
-.slick-slide{
+
+.slick-slide
+{
   visibility: hidden !important;
 }
-.slick-active{
+
+.slick-active
+{
   visibility: visible !important;
 }
-#carrusel-productos{
+
+#carrusel-productos
+{
   position: relative;
 }
-.oculto {
+
+.oculto
+{
   display: none;
 }
-#carrusel-productos {
-  width: 100%; /* asegura que el contenedor ocupe todo el ancho disponible */
-  overflow: hidden; /* oculta el contenido que se desborde del contenedor */
+
+#carrusel-productos
+{
+  width: 100%;
+  /* asegura que el contenedor ocupe todo el ancho disponible */
+  overflow: hidden;
+  /* oculta el contenido que se desborde del contenedor */
 }
-#carrusel-productos .slick-prev{
+
+#carrusel-productos .slick-prev
+{
   position: absolute;
   z-index: 3;
   bottom: 50%;
   left: 0px;
   opacity: 0;
 }
-#carrusel-productos .slick-prev:hover{
+
+#carrusel-productos .slick-prev:hover
+{
   opacity: 1;
 }
-#carrusel-productos .slick-next{
+
+#carrusel-productos .slick-next
+{
   position: absolute;
   z-index: 3;
   bottom: 50%;
   right: 0px;
   opacity: 0;
 }
-#carrusel-productos .slick-next:hover{
+
+#carrusel-productos .slick-next:hover
+{
   opacity: 1;
 }
 
-.productos{
+.productos
+{
   height: 70px;
   width: 70px;
 }
-.tiendas .card{
+
+.tiendas .card
+{
   height: 340px;
 }
-.tiendas .miniatura{
+
+.tiendas .miniatura
+{
   height: 80px;
   width: 80px;
 }
-.tiendas .fondo{
+
+.tiendas .fondo
+{
   top: 0;
   z-index: 0;
 }
-.tiendas .uno{
+
+.tiendas .uno
+{
   z-index: 1;
 }
+
+ol
+{
+  margin: 0px 10px 0px 0px;
+  padding: 0;
+}
+
+ol li
+{
+  cursor: pointer;
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+ol li img
+{
+  border: #999 solid 1px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+ol li img:hover
+{
+  border: #3483fa solid 1px;
+}
+
+ol li .flex-active
+{
+  border: #3483fa solid 1px;
+}
+
+.woocommerce-notice--info
+{
+  border-radius: var(--bs-border-radius-lg) !important;
+  --bs-border-opacity: 1;
+  border: #3483fa solid 1px;
+
+}
+.shop_table{
+  background-color: #fff;
+}
+.woocommerce-checkout-payment{
+  background-color: #fff !important;
+}
+.wp-element-button{
+  background-color: #3483fa !important;
+}
+.wc-proceed-to-checkout a{
+  width: 100%;
+}
+.coupon .input-text{
+  width: 140px !important;
+}
+.cart_totals{
+  width: 100% !important;
+}
+.woocommerce-error {
+  border: 1px solid #dc3545; /* Establece un borde rojo */
+  border-radius: 0.25rem; /* Establece un borde redondeado */
+}
+.flex-viewport
+{
+  width: 600px;
+}
+
+.woocommerce-product-gallery
+{
+  justify-content: start;
+}
+
 @media screen and (max-width: 768px)
 {
-  body{
+  body
+  {
     overflow-x: hidden !important;
   }
+
   .cart-collaterals
   {
     width: 100% !important;
@@ -396,7 +522,10 @@ footer .responsivo li
     position: relative;
     visibility: visible;
   }
-  #carrusel-productos .slick-slide {
-    width: calc(100% / 2); /* ajusta el ancho de cada slide al 50% del ancho de la pantalla */
+
+  #carrusel-productos .slick-slide
+  {
+    width: calc(100% / 2);
+    /* ajusta el ancho de cada slide al 50% del ancho de la pantalla */
   }
 }

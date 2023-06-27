@@ -16,7 +16,9 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main container">
-
+	<div id="loading-screen">
+		<div class="spinner-border text-warning" role="status"><span class="visually-hidden">Loading...</span></div>
+	</div>
 		<?php
 		while ( have_posts() ) :
 			the_post();

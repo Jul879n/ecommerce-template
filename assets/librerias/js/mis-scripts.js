@@ -151,4 +151,19 @@ jQuery(document).ready(function ($) {
   $(".slick-prev").addClass(
     "border shadow bg-light esfera rounded-circle d-flex justify-content-center align-items-center"
   );
+  if ($("#home-page").length === 0) {
+    $(".site-footer").removeClass("bg-white").find(".container:eq(0)").remove();
+    $(".site-footer .bg-white:eq(0)").removeClass("bg-white");
+  }
+  $(".single-product .woocommerce-product-gallery").removeClass().addClass("woocommerce-product-gallery col-12 col-sm-6 d-flex flex-row-reverse mb-3");
+  $('ol.flex-control-nav.flex-control-thumbs img').removeAttr('onload');
+  $(".woocommerce-loop-product__link").addClass("p-0");
+  $(".woocommerce-product-gallery .flex-viewport").addClass("card-img");
+  $('.flex-control-thumbs').prependTo('.woocommerce-product-gallery');
+  $(".single-product .product").addClass("row justify-content-between");
+  $(".single-product .summary").removeClass().addClass("col-12 col-sm-3 card p-3 mb-3 me-3");
+  $("#customer_details").addClass("form-control p-3");
+  $("#customer_details input").addClass("form-control");
+  $(".woocommerce-info").addClass("rounded-3 border-primary border");
+  $(".wp-element-button").removeClass().addClass("btn btn-primary");
 });
