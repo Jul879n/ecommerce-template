@@ -472,6 +472,10 @@ ol li .flex-active
 .woocommerce-checkout-payment{
   background-color: #fff !important;
 }
+.checkout-button{
+  background-color: #3483fa !important;
+
+}
 .wp-element-button{
   background-color: #3483fa !important;
 }
