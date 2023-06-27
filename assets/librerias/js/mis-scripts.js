@@ -161,9 +161,17 @@ jQuery(document).ready(function ($) {
   $(".woocommerce-product-gallery .flex-viewport").addClass("card-img");
   $('.flex-control-thumbs').prependTo('.woocommerce-product-gallery');
   $(".single-product .product").addClass("row justify-content-between");
-  $(".single-product .summary").removeClass().addClass("col-12 col-sm-3 card p-3 mb-3 me-3");
+  $(".single-product .summary").removeClass().addClass("col-12 col-sm-3 card p-3 mb-3 me-3 pegado");
   $("#customer_details").addClass("form-control p-3");
   $("#customer_details input").addClass("form-control");
   $(".woocommerce-info").addClass("rounded-3 border-primary border");
   $(".wp-element-button").removeClass().addClass("btn btn-primary");
+  $(".woocommerce-tabs").addClass("card p-3 col-sm-8 ms-3");
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > $('.woocommerce-tabs').offset().top) {
+      $('.pegado').addClass('pegado-fixed');
+    } else {
+      $('.pegado').removeClass('pegado-fixed');
+    }
+  });
 });

@@ -489,8 +489,24 @@ ol li .flex-active
   border-radius: 0.25rem; /* Establece un borde redondeado */
 }
 .woocommerce-message{
-  border: 1px solid #3483fa;
+  border: 1px solid #00a65a;
   border-radius: 0.25rem; /* Establece un borde redondeado */
+}
+.woocommerce-Tabs-panel--additional_information{
+  display: block !important;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs {
+  display: none;
+}
+.pegado{
+  position: sticky;
+  top: 40px;
+  z-index: 5;
+}
+.pegado-fixed {
+  position: static;
+  top: 40px;
+  z-index: 5;
 }
 .flex-viewport
 {
