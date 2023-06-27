@@ -503,11 +503,6 @@ ol li .flex-active
   top: 40px;
   z-index: 5;
 }
-.pegado-fixed {
-  position: static;
-  top: 40px;
-  z-index: 5;
-}
 .flex-viewport
 {
   width: 600px;
@@ -520,6 +515,11 @@ ol li .flex-active
 
 @media screen and (max-width: 768px)
 {
+  .pegado{
+    position: relative;
+    top: auto;
+    z-index: 1;
+  }
   body
   {
     overflow-x: hidden !important;
