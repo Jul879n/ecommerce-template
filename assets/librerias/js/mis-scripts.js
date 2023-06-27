@@ -166,6 +166,11 @@ jQuery(document).ready(function ($) {
   $("#customer_details input").addClass("form-control");
   $(".woocommerce-info").addClass("rounded-3 border-primary border");
   $(".wp-element-button").removeClass().addClass("btn btn-primary");
-  $(".woocommerce-tabs").addClass("card p-3 col-sm-8");
-  $(".related").insertAfter(".product");
+  $(".woocommerce-tabs").addClass("card p-3 col-sm-8 mb-3");
+  $(".related").attr("id", "relacionados");
+  // Selecciona el elemento donde deseas insertar la sección #relacionados
+var $targetElement = $(".type-product:first");
+
+// Mueve el elemento #relacionados a la posición deseada, si ya existe en el DOM
+$("#relacionados").detach().insertAfter($targetElement);
 });
