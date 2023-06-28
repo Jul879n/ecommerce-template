@@ -52,17 +52,27 @@ jQuery(document).ready(function ($) {
     $(this).find("i").toggleClass("fa-angle-down fa-angle-up");
   });
   $(".product .onsale").remove();
-  $(".menu-desplegable").attr("data-bs-toggle", "tooltip");
+  $(".menu-desplegable").attr("data-bs-toggle", "popover");
+  $(".menu-desplegable").attr("data-bs-placement", "bottom");
   $(".menu-desplegable").attr("data-bs-html", "true");
   $(".menu-desplegable").attr("data-bs-title", $(".sub-menu").detach().html());
 
+  $('.menu-desplegable').popover({
+    trigger: 'manual' // Configurar el trigger para activación manual
+  });
+
+  // Mostrar el popover manualmente al hacer clic en el botón
+  $('.menu-desplegable').click(function() {
+    $(this).popover('show');
+  });
   const tooltipTriggerList = document.querySelectorAll(
     '[data-bs-toggle="tooltip"]'
   );
   const tooltipList = [...tooltipTriggerList].map(
     (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
   );
-
+  const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+  const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
   $("#menu-derecha-nav li")
     .eq(3)
     .find("a")
@@ -92,7 +102,7 @@ jQuery(document).ready(function ($) {
   $("#carrusel-productos").slick({
     slidesToShow: 5,
     slidesToScroll: 5,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 4000,
     arrows: true,
     dots: false,
