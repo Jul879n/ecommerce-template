@@ -195,6 +195,7 @@ jQuery(document).ready(function ($) {
     $(this).find(".woocommerce-Price-amount").eq(1).addClass("grande");
   });
   $("#home-page .product li").find(".btn-primary").remove();
+  $("#home-page .product li").find(".woocommerce-loop-product__title").remove();
   $("#home-page ").find(".mitad").remove();
   $("#home-page ").find(".porcentaje").remove();
 });
