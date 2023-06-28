@@ -62,9 +62,10 @@ jQuery(document).ready(function ($) {
   });
 
   // Mostrar el popover manualmente al hacer clic en el botón
-  $('.menu-desplegable').click(function() {
+  $('.menu-desplegable').mouseenter(function() {
     $(this).popover('show');
   });
+  
   const tooltipTriggerList = document.querySelectorAll(
     '[data-bs-toggle="tooltip"]'
   );
