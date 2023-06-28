@@ -66,9 +66,9 @@ jQuery(document).ready(function ($) {
     $(this).popover('show');
   });
   $(document).on('click', function (e) {
-    if ($(e.target).data('toggle') !== 'popover' && !$(e.target).hasClass('menu-desplegable')) {
+    // Verificar si el clic fue dentro del popover o en el botón que lo activa
+    if ($(e.target).data('toggle') !== 'popover' && $(e.target).parents('.popover.in').length === 0) {
       $('.menu-desplegable').popover('hide');
-      $(document).off('click'); // Eliminar el evento "click" del documento
     }
   });
   const tooltipTriggerList = document.querySelectorAll(
