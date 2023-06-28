@@ -158,21 +158,21 @@ jQuery(document).ready(function ($) {
   $(".single-product .woocommerce-product-gallery")
     .removeClass()
     .addClass(
-      "woocommerce-product-gallery col-12 col-sm-9 d-flex flex-row-reverse mb-3"
+      "woocommerce-product-gallery col-12 col-sm-8 d-flex flex-row-reverse mb-3"
     );
   $("ol.flex-control-nav.flex-control-thumbs img").removeAttr("onload");
   $(".woocommerce-loop-product__link").addClass("p-0");
   $(".woocommerce-product-gallery .flex-viewport").addClass("card-img");
   $(".flex-control-thumbs").prependTo(".woocommerce-product-gallery");
   $(".single-product .product").addClass("row justify-content-between");
-  $('<div id="pegado" class="col-sm-3 pegado"></div>').insertAfter(".summary");
+  $('<div id="pegado" class="col-sm-4 pegado"></div>').insertAfter(".summary");
   $(".summary").appendTo("#pegado");
   $(".single-product .summary").removeClass().addClass("card p-3 mb-3 pago");
   $("#customer_details").addClass("form-control p-3");
   $("#customer_details input").addClass("form-control");
   $(".woocommerce-info").addClass("rounded-3 border-primary border");
   $(".wp-element-button").removeClass().addClass("btn btn-primary");
-  $(".woocommerce-tabs").addClass("card border-0 border-top p-3 col-sm-9 mb-3");
+  $(".woocommerce-tabs").addClass("card border-0 border-top p-3 col-sm-8 mb-3");
   $(".related").attr("id", "relacionados");
   // Selecciona el elemento donde deseas insertar la sección #relacionados
   var $targetElement = $(".type-product:first");
@@ -202,4 +202,5 @@ jQuery(document).ready(function ($) {
   $(".pago .product_meta").remove();
   $("#relacionados").insertAfter("#single-producto");
   $("#ver-pago").insertAfter(".pago .cuotas");
+  $("#envio").insertAfter("#ver-pago");
 });
