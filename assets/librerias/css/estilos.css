@@ -538,6 +538,9 @@ ol li .flex-active
 .single_add_to_cart_button{
   background-color: #3483fa !important;
 }
+#place_order{
+  background-color: #3483fa !important;
+}
 .flex-viewport
 {
   width: 600px;
