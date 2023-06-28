@@ -10,7 +10,6 @@
     incrustar_hoja_estilos_ecommerce();
 </script>
 <div id="carrusel-productos">
-
 <?php
 $args = array( 
     'posts_per_page' => 85,
@@ -40,7 +39,7 @@ if ($featured_product->have_posts()) { // Comprobar si hay publicaciones encontr
         ?>
         <div class="col-6 col-sm-3 mt-2 p-1">
 		            <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-		                <div class="card miniatura">
+		                <div class="card miniatura sombra">
 		                    <div class="card-body">
                             <?php wc_get_template_part('content', 'product'); ?>
 		                    </div>

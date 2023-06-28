@@ -52,7 +52,7 @@
 							</div>
 						</div>
 						<div class="collapse navbar-collapse col-12 col-sm-12" id="navbarNavDropdown">
-								<div class="d-flex justify-content-between no-ver">
+								<div class="d-flex justify-content-between no-ver w-100">
 									<?php if (is_active_sidebar('nav1')) :
 										dynamic_sidebar('nav1');
 									endif; ?>

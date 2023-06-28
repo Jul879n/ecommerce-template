@@ -136,18 +136,22 @@
 				</div>
 			</div>
 			<!--medio de pago-->
-			<div class="col-12 col-sm-12">
+			<div class="d-flex align-items-end mt-3">
+				<h2 class="m-0 me-2">Ofertas</h2>
+				<a class="text-primary" href="#">Ver todas</a>
+			</div>
+			<div class="col-12 col-sm-12 mb-3">
 				<?php include get_template_directory() . '/assets/modulos/modulo-productos/loop-productos.php'; ?>
 			</div>
 			<!--Suscríbete-->
-			<div class="col-12 col-sm-12">
+			<div class="col-12 col-sm-12 mb-3">
 				<div class="card p-0">
 					<div class="card-header d-flex justify-content-between align-items-center text-light header-sub" style="--deg_loyalty:90deg;--first_color_loyalty:#a90f90;--percentage_loyalty:55%;--second_color_loyalty:#0c1a51">
 						<h2>
 							<?php echo esc_html(get_field('titulo')); ?>
 						</h2>
 						<div class="border-start border-primary ps-3">
-							<span>$
+							<span class="text-decoration-line-through">$
 								<?php echo esc_html(get_field('precio_original')); ?>
 							</span><br>
 							<span>$
@@ -199,7 +203,7 @@
 						</div>
 					</div>
 					<div class="card-footer d-flex justify-content-end">
-						<div><a href="#" class="btn btn-primary">Suscríbete</a></div>
+						<div><a href="#" class="btn btn-primary text-white">Suscríbete</a></div>
 					</div>
 				</div>
 			</div>
@@ -209,7 +213,7 @@
 			<!--beneficios-->
 			<div class="d-flex align-items-end mt-3">
 				<h2 class="m-0 me-2">Beneficios de Mercado Puntos</h2>
-				<a href="#">Ver todos los beneficios</a>
+				<a class="text-primary" href="#">Ver todos los beneficios</a>
 			</div>
 			<div class="col-12 col-sm-4 mt-3 mb-3">
 				<?php
@@ -294,7 +298,7 @@
 			</div>
 			<!--beneficios-->
 			<!--oferta del dia-->
-			<div class="col-12 col-sm-12 oferta-del-dia">
+			<div class="col-12 col-sm-12 oferta-del-dia mb-3">
 				<div class="card p-0">
 					<div class="container-fluid">
 						<div class="row">
@@ -327,7 +331,7 @@
 								<div class="card-body">
 									<span class="card-text text-uppercase"><?php echo esc_html(get_field('subtitulo_descubre_1')); ?></span>
 									<h2 class="card-title text-uppercase"><?php echo esc_html(get_field('titulo_descubre_1')); ?></h2>
-									<a class="btn btn-primary rounded-0" href="#">Ver más</a>
+									<a class="btn btn-primary rounded-0 text-white" href="#">Ver más</a>
 								</div>
 							</div>
 							<div class="col-6 col-sm-6 p-0">
@@ -349,7 +353,7 @@
 								<div class="card-body">
 									<span class="card-text text-uppercase"><?php echo esc_html(get_field('subtitulo_descubre_2')); ?></span>
 									<h2 class="card-title text-uppercase"><?php echo esc_html(get_field('titulo_descubre_2')); ?></h2>
-									<a class="btn btn-primary rounded-0" href="#">Ver más</a>
+									<a class="btn btn-primary rounded-0 text-white" href="#">Ver más</a>
 								</div>
 							</div>
 							<div class="col-6 col-sm-6 p-0">
@@ -367,7 +371,7 @@
 			<!--tiendas-->
 			<div class="d-flex align-items-end mt-3">
 				<h2 class="m-0 me-2">Las mejores tiendas te esperan</h2>
-				<a href="#">Ver tiendas</a>
+				<a class="text-primary" href="#">Ver tiendas</a>
 			</div>
 			<div class="tiendas col-12 col-sm-3">
 				<div class="card sombra d-flex flex-column align-items-center justify-content-around position-relative">
@@ -510,18 +514,17 @@
 						<div class="row">
 							<div class="col-6 col-sm-6 d-flex justify-content-center align-items-center">
 								<div class="card-body">
-									<span class="card-text text-uppercase"><?php echo esc_html(get_field('subtitulo_del_dia')); ?></span>
-									<h2 class="card-title text-uppercase"><?php echo esc_html(get_field('titulo_del_dia')); ?></h2>
-									<a class="btn btn-primary" href="#">Ver más</a>
+									<span class="card-text text-uppercase"><?php echo esc_html(get_field('subtitulo_descubre_1')); ?></span>
+									<h2 class="card-title text-uppercase"><?php echo esc_html(get_field('titulo_descubre_1')); ?></h2>
+									<a class="btn btn-primary rounded-0 text-white" href="#">Ver más</a>
 								</div>
 							</div>
 							<div class="col-6 col-sm-6 p-0">
 								<?php
-								$image = get_field('imagen_del_dia');
+								$image = get_field('img_descubre_1');
 								if (!empty($image)) : ?>
-									<img class="img-fluid rounded-end" src="https://http2.mlstatic.com/D_NQ_665317-MLA70001271887_062023-C.webp" />
+									<img class="img-fluid rounded-end" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 								<?php endif; ?>
-
 							</div>
 						</div>
 					</div>
@@ -533,18 +536,17 @@
 						<div class="row">
 							<div class="col-6 col-sm-6 d-flex justify-content-center align-items-center">
 								<div class="card-body">
-									<span class="card-text text-uppercase"><?php echo esc_html(get_field('subtitulo_del_dia')); ?></span>
-									<h2 class="card-title text-uppercase"><?php echo esc_html(get_field('titulo_del_dia')); ?></h2>
-									<a class="btn btn-primary" href="#">Ver más</a>
+									<span class="card-text text-uppercase"><?php echo esc_html(get_field('subtitulo_descubre_2')); ?></span>
+									<h2 class="card-title text-uppercase"><?php echo esc_html(get_field('titulo_descubre_2')); ?></h2>
+									<a class="btn btn-primary rounded-0 text-white" href="#">Ver más</a>
 								</div>
 							</div>
 							<div class="col-6 col-sm-6 p-0">
 								<?php
-								$image = get_field('imagen_del_dia');
+								$image = get_field('img_descubre_2');
 								if (!empty($image)) : ?>
-									<img class="img-fluid rounded-end" src="https://http2.mlstatic.com/D_NQ_817013-MLA69982326912_062023-C.webp" />
+									<img class="img-fluid rounded-end" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 								<?php endif; ?>
-
 							</div>
 						</div>
 					</div>
@@ -870,3 +872,22 @@
 		</div>
 	</div>
 </div><!-- #post-<?php the_ID(); ?> -->
+
+
+<p class="price d-flex">
+	<div class="mitad">
+	<del aria-hidden="false">
+		<span class="woocommerce-Price-amount amount">
+			<bdi>
+				<span class="woocommerce-Price-currencySymbol">$</span>34.000
+			</bdi>
+		</span>
+	</del>
+	<ins>
+		<span class="woocommerce-Price-amount amount grande"><bdi><span class="woocommerce-Price-currencySymbol">$</span>3.400
+			</bdi>
+		</span>
+	</ins>
+	</div>
+<div class="porcentaje">90% OFF</div>
+</p>

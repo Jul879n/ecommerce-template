@@ -155,26 +155,46 @@ jQuery(document).ready(function ($) {
     $(".site-footer").removeClass("bg-white").find(".container:eq(0)").remove();
     $(".site-footer .bg-white:eq(0)").removeClass("bg-white");
   }
-  $(".single-product .woocommerce-product-gallery").removeClass().addClass("woocommerce-product-gallery col-12 col-sm-6 d-flex flex-row-reverse mb-3");
-  $('ol.flex-control-nav.flex-control-thumbs img').removeAttr('onload');
+  $(".single-product .woocommerce-product-gallery")
+    .removeClass()
+    .addClass(
+      "woocommerce-product-gallery col-12 col-sm-9 d-flex flex-row-reverse mb-3"
+    );
+  $("ol.flex-control-nav.flex-control-thumbs img").removeAttr("onload");
   $(".woocommerce-loop-product__link").addClass("p-0");
   $(".woocommerce-product-gallery .flex-viewport").addClass("card-img");
-  $('.flex-control-thumbs').prependTo('.woocommerce-product-gallery');
+  $(".flex-control-thumbs").prependTo(".woocommerce-product-gallery");
   $(".single-product .product").addClass("row justify-content-between");
-  $(".single-product .summary").removeClass().addClass("col-12 col-sm-3 card p-3 mb-3 me-3 pegado");
+  $('<div id="pegado" class="col-sm-3 pegado"></div>').insertAfter(".summary");
+  $(".summary").appendTo("#pegado");
+  $(".single-product .summary").removeClass().addClass("card p-3 mb-3 pago");
   $("#customer_details").addClass("form-control p-3");
   $("#customer_details input").addClass("form-control");
   $(".woocommerce-info").addClass("rounded-3 border-primary border");
   $(".wp-element-button").removeClass().addClass("btn btn-primary");
-  $(".woocommerce-tabs").addClass("card p-3 col-sm-8 mb-3");
+  $(".woocommerce-tabs").addClass("card border-0 border-top p-3 col-sm-9 mb-3");
   $(".related").attr("id", "relacionados");
   // Selecciona el elemento donde deseas insertar la sección #relacionados
-var $targetElement = $(".type-product:first");
-// Mueve el elemento #relacionados a la posición deseada, si ya existe en el DOM
-$("#relacionados").detach().insertAfter($targetElement);
-$('#comments').appendTo('.woocommerce-tabs');
-$("#commentform label").addClass("form-label");
-$("#commentform input").addClass("form-control");
-$("#commentform textarea").addClass("form-control");
-$("#wp-comment-cookies-consent").removeClass("form-control");
+  var $targetElement = $(".type-product:first");
+  // Mueve el elemento #relacionados a la posición deseada, si ya existe en el DOM
+  $("#relacionados").detach().insertAfter($targetElement);
+  $("#comments").appendTo(".woocommerce-tabs");
+  $("#commentform label").addClass("form-label");
+  $("#commentform input").addClass("form-control");
+  $("#commentform textarea").addClass("form-control");
+  $("#wp-comment-cookies-consent").removeClass("form-control");
+  $("#tarjetas").appendTo("#pegado");
+  $(".pago").each(function () {
+    $(this).find(".price").addClass("d-flex justify-content-between");
+    $(this).find(".cart").addClass("d-flex flex-column justify-content-around");
+    $(this).find(".separacion").css("heigth", "120px");
+    $('<div class="mitad"></div>').appendTo($(this).find(".price"));
+    $(this).find(".porcentaje").appendTo($(this).find(".price"));
+    $(this).find(".price del").first().appendTo($(this).find(".mitad"));
+    $(this).find(".price ins").first().appendTo($(this).find(".mitad"));
+    $(this).find(".woocommerce-Price-amount").eq(1).addClass("grande");
+  });
+  $("#home-page .product li").find(".btn-primary").remove();
+  $("#home-page ").find(".mitad").remove();
+  $("#home-page ").find(".porcentaje").remove();
 });

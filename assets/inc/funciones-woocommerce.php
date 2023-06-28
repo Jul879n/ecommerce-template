@@ -42,28 +42,10 @@ function mostrar_cuotas_single()
     $precio_cuota_formateado = number_format($precio_cuota, 0, ',', '.');
     // Mostrar el contenido del campo personalizado si existe
     if ($cuotas) {
-        echo '<div class="cuotas mt-5">en <span class="verde">' . esc_html($cuotas) . 'x $' . esc_html($precio_cuota_formateado) . ' sin interés</span></div>';
+        echo '<div class="cuotas mt-1">en <span class="verde">' . esc_html($cuotas) . 'x $' . esc_html($precio_cuota_formateado) . ' sin interés</span></div>';
     }
 }
 add_action('woocommerce_after_add_to_cart_button', 'mostrar_cuotas_single', 25);
-
-function caracteristicas(){
-    $existe = false;
-    for ($i = 1; $i <= 10; $i++) {
-        if (get_field('tienes_que_saber_' . $i)) {
-            $existe = true;
-            break;
-        }
-    }
-    if ($existe) {
-        echo '<div class="mt-5">';
-        for ($i = 1; $i <= 10; $i++) {
-            echo "<span>" . esc_html(get_field('tienes_que_saber_' . $i)) . "</span><br>";
-        }
-        echo "</div>";
-    }
-}
-add_action('woocommerce_after_add_to_cart_button', 'caracteristicas', 30);
 
 function nav(){
     include get_template_directory() . '/template-parts/nav.php';
