@@ -373,7 +373,7 @@
 				<h2 class="m-0 me-2">Las mejores tiendas te esperan</h2>
 				<a class="text-primary" href="#">Ver tiendas</a>
 			</div>
-			<div class="tiendas col-12 col-sm-3">
+			<div class="tiendas col-12 col-sm-3 mb-3">
 				<div class="card sombra d-flex flex-column align-items-center justify-content-around position-relative">
 					<?php
 					$image = get_field('fondo_tienda_1');
@@ -406,7 +406,7 @@
 					<a href="#">Ver tienda</a>
 				</div>
 			</div>
-			<div class="tiendas col-12 col-sm-3">
+			<div class="tiendas col-12 col-sm-3 mb-3">
 				<div class="card sombra d-flex flex-column align-items-center justify-content-around position-relative">
 					<?php
 					$image = get_field('fondo_tienda_2');
@@ -439,7 +439,7 @@
 					<a href="#">Ver tienda</a>
 				</div>
 			</div>
-			<div class="tiendas col-12 col-sm-3">
+			<div class="tiendas col-12 col-sm-3 mb-3">
 				<div class="card sombra d-flex flex-column align-items-center justify-content-around position-relative">
 					<?php
 					$image = get_field('fondo_tienda_3');
@@ -472,7 +472,7 @@
 					<a href="#">Ver tienda</a>
 				</div>
 			</div>
-			<div class="tiendas col-12 col-sm-3">
+			<div class="tiendas col-12 col-sm-3 mb-3">
 				<div class="card sombra d-flex flex-column align-items-center justify-content-around position-relative">
 					<?php
 					$image = get_field('fondo_tienda_4');
@@ -507,7 +507,7 @@
 			</div>
 			<!--tiendas-->
 			<!--te puede interesar-->
-			<h2 class="mt-3">Te puede interesar</h2>
+			<h2>Te puede interesar</h2>
 			<div class="col-12 col-sm-6">
 				<div class="card p-0 sombra">
 					<div class="container-fluid">
