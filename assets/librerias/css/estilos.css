@@ -520,14 +520,24 @@ ol li .flex-active
 {
   display: none;
 }
-
+.product{
+  position: relative;
+}
 .pegado
 {
-  position: sticky;
-  top: 200px;
+  position: absolute;
+  right: 0;
   z-index: 5;
 }
-
+.sticky {
+  position: sticky;
+  top: 40px;
+  right: 0;
+  z-index: 5;
+}
+.single_add_to_cart_button{
+  background-color: #3483fa !important;
+}
 .flex-viewport
 {
   width: 600px;
