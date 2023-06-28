@@ -221,4 +221,6 @@ jQuery(document).ready(function ($) {
   $("#envio").insertAfter("#ver-pago");
   $(".price").addClass("mb-0");
   $(".btn-primary").addClass("text-light");
+  $('.login').addClass("bg-white");
+  $('.register').addClass("bg-white");
 });
