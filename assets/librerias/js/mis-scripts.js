@@ -65,7 +65,12 @@ jQuery(document).ready(function ($) {
   $('.menu-desplegable').mouseenter(function() {
     $(this).popover('show');
   });
-  
+  $(document).on('click', function (e) {
+    if ($(e.target).data('toggle') !== 'popover' && !$(e.target).hasClass('menu-desplegable')) {
+      $('.menu-desplegable').popover('hide');
+      $(document).off('click'); // Eliminar el evento "click" del documento
+    }
+  });
   const tooltipTriggerList = document.querySelectorAll(
     '[data-bs-toggle="tooltip"]'
   );
