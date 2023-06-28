@@ -716,7 +716,9 @@ a:visited
 {
   height: 170px
 }
-
+.pago h1{
+  font-size: 26px;
+}
 @media screen and (max-width: 768px)
 {
   .slick-next{
