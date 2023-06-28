@@ -97,7 +97,7 @@ jQuery(document).ready(function ($) {
     arrows: true,
     dots: false,
     pauseOnHover: true,
-    infinite: false,
+    infinite: true,
     edgeFriction: 1,
     responsive: [
       {
