@@ -719,6 +719,12 @@ a:visited
 
 @media screen and (max-width: 768px)
 {
+  .slick-next{
+    display: none;
+  }
+  .slick-prev{
+    display: none;
+  }
   .ocultar
   {
     display: none;

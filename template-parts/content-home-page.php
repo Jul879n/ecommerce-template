@@ -136,13 +136,16 @@
 				</div>
 			</div>
 			<!--medio de pago-->
+			
+		<!--ofertas-->
+			<div class="col-12 col-sm-12 mb-3">
 			<div class="d-flex align-items-end mt-3">
 				<h2 class="m-0 me-2">Ofertas</h2>
 				<a class="text-primary" href="#">Ver todas</a>
 			</div>
-			<div class="col-12 col-sm-12 mb-3">
 				<?php include get_template_directory() . '/assets/modulos/modulo-productos/loop-productos.php'; ?>
 			</div>
+			<!--ofertas-->
 			<!--Suscríbete-->
 			<div class="col-12 col-sm-12 mb-3">
 				<div class="card p-0">
@@ -207,7 +210,6 @@
 					</div>
 				</div>
 			</div>
-
 			<!--Suscríbete-->
 
 			<!--beneficios-->
