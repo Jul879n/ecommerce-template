@@ -50,7 +50,7 @@ get_header();
 		<div class="d-flex align-items-center"><a href="#" class="pe-2 text-primary">Compartir</a> <a href="#" class="border-start ps-2 border-primary text-primary">Vender uno igual</a>
 		</div>
 	</div>
-	<div id="envio" class="d-flex">
+	<div id="envio" class="d-flex mt-3">
 	<i class="fa-solid fa-truck porcentaje me-2"></i>
 		<div class="d-flex flex-column">
 			<span class="porcentaje mb-2">Llega gratis entre el sábado y el lunes</span>
