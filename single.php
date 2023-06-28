@@ -50,7 +50,7 @@ get_header();
 		<div class="d-flex align-items-center"><a href="#" class="pe-2 text-primary">Compartir</a> <a href="#" class="border-start ps-2 border-primary text-primary">Vender uno igual</a>
 		</div>
 	</div>
-	<div class="card shadow  mb-5">
+	<div id="single-producto" class="card shadow  mb-5">
 
 		<div class="card-body">
 

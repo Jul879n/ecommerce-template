@@ -200,4 +200,5 @@ jQuery(document).ready(function ($) {
   $("#home-page ").find(".mitad").remove();
   $("#home-page ").find(".porcentaje").remove();
   $(".pago .product_meta").remove();
+  $("#relacionados").insertAfter("#single-producto");
 });
