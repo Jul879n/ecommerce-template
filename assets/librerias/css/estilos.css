@@ -720,10 +720,10 @@ a:visited
 @media screen and (max-width: 768px)
 {
   .slick-next{
-    display: none;
+    display: none !important;
   }
   .slick-prev{
-    display: none;
+    display: none !important;
   }
   .ocultar
   {
