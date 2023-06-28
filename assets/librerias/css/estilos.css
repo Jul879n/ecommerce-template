@@ -693,16 +693,16 @@ a:visited
   color: #fff;
   font-size: 14px;
 }
-#menu-item-235 >:nth-child(1):hover,
-#menu-item-236 >:nth-child(1):hover,
-#menu-item-237 >:nth-child(1):hover,
-#menu-item-238 >:nth-child(1):hover,
-#menu-item-239 >:nth-child(1):hover,
-#menu-item-240 >:nth-child(1):hover,
-#menu-item-241 >:nth-child(1):hover,
-#menu-item-242 >:nth-child(1):hover,
-#menu-item-243 >:nth-child(1):hover,
-#menu-item-244 >:nth-child(1):hover {
+#menu-item-235:hover,
+#menu-item-236:hover,
+#menu-item-237:hover,
+#menu-item-238:hover,
+#menu-item-239:hover,
+#menu-item-240:hover,
+#menu-item-241:hover,
+#menu-item-242:hover,
+#menu-item-243:hover,
+#menu-item-244:hover {
     background-color:  #3483fa;
 }
 #home-page .price ins
