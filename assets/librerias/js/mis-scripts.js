@@ -193,9 +193,11 @@ jQuery(document).ready(function ($) {
     $(this).find(".price del").first().appendTo($(this).find(".mitad"));
     $(this).find(".price ins").first().appendTo($(this).find(".mitad"));
     $(this).find(".woocommerce-Price-amount").eq(1).addClass("grande");
+    $(this).find(".cuotas").insertAfter($(this).find(".price"));
   });
   $("#home-page .product li").find(".woocommerce-loop-product__title").remove();
   $("#home-page .product li").find(".ajax_add_to_cart").remove();
   $("#home-page ").find(".mitad").remove();
   $("#home-page ").find(".porcentaje").remove();
+  $(".pago .product_meta").remove();
 });
