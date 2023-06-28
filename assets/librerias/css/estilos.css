@@ -704,6 +704,7 @@ a:visited
 #menu-item-242:hover,
 #menu-item-243:hover,
 #menu-item-244:hover {
+  color: #fff;
     background-color:  #3483fa;
     padding: 10px;
 }
