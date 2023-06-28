@@ -616,6 +616,9 @@ ol li .flex-active
   #home-page .product .miniatura{
     height: 350px
   }
+  #menu-izquierda-nav{
+    font-size: 10px;
+  }
   #home-page .price ins{
     background-color: transparent;
   }
