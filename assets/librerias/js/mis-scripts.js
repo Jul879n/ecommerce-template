@@ -203,4 +203,5 @@ jQuery(document).ready(function ($) {
   $("#relacionados").insertAfter("#single-producto");
   $("#ver-pago").insertAfter(".pago .cuotas");
   $("#envio").insertAfter("#ver-pago");
+  $(".price").addClass("mb-0");
 });
