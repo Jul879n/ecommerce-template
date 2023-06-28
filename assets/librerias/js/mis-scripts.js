@@ -201,4 +201,5 @@ jQuery(document).ready(function ($) {
   $("#home-page ").find(".porcentaje").remove();
   $(".pago .product_meta").remove();
   $("#relacionados").insertAfter("#single-producto");
+  $("#ver-pago").insertAfter(".pago .cuotas");
 });
