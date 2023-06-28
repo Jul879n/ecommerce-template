@@ -619,17 +619,9 @@ ol li .flex-active
   #menu-izquierda-nav{
     font-size: 10px;
   }
-  #menu-centro-nav .menu-desplegable{
-    background-color: #999;
-  }
-  #menu-item-235,#menu-item-236,#menu-item-237,#menu-item-238,#menu-item-239,#menu-item-240,#menu-item-241,#menu-item-242,#menu-item-243,#menu-item-244{
+  #menu-item-235,#menu-item-236,#menu-item-237,#menu-item-238,#menu-item-239,#menu-item-240,#menu-item-241,#menu-item-242,#menu-item-243,#menu-item-244 a{
     text-align: left;
     color: white;
-  }
-  #menu-item-235,#menu-item-236,#menu-item-237,#menu-item-238,#menu-item-239,#menu-item-240,#menu-item-241,#menu-item-242,#menu-item-243,#menu-item-244:hover{
-    text-align: left;
-    color: white;
-    background-color: #3483fa;
   }
   #home-page .price ins{
     background-color: transparent;
