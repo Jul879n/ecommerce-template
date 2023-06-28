@@ -524,7 +524,7 @@ ol li .flex-active
 .pegado
 {
   position: sticky;
-  top: 40px;
+  top: 200px;
   z-index: 5;
 }
 
@@ -587,6 +587,9 @@ ol li .flex-active
   }
   #tarjetas{
     height: 370px;
+  }
+  #relacionados .card{
+    height: 450px
   }
   .catorce{
     font-size: 14px;

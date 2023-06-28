@@ -47,7 +47,7 @@ get_header();
 																								dynamic_sidebar('breadcrumb');
 																							endif; ?>
 		</div>
-		<div class="d-flex align-items-center"><a href="#" class="pe-2">Compartir</a> <a href="#" class="border-start ps-2 border-primary">Vender uno igual</a>
+		<div class="d-flex align-items-center"><a href="#" class="pe-2 text-primary">Compartir</a> <a href="#" class="border-start ps-2 border-primary text-primary">Vender uno igual</a>
 		</div>
 	</div>
 	<div class="card shadow  mb-5">
